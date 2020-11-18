@@ -64,7 +64,6 @@ a { /* Para los links alpicar lo siguiente*/
 } 
 footer { /* Para el pie de página aplicar lo siguiente*/
 	position: fixed;
-	bottom: 0px;
 	width: 100%;
 	background-color: black;
 }
@@ -201,4 +200,120 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 }
 .bottom center a:hover{
 	text-decoration: underline;
+}
+.blog-card{
+	position: absolute;
+	height: 370px;
+	width: 95%;
+	max-width: 850px ;
+	margin: auto;
+	background: rgb(117, 224, 117, 0.7);
+	border-radius: 25px;
+	box-shadow: 0 10px 5px rgba(56, 252, 56, .6);
+}
+.blog-card .inner-part{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 25px;
+	height: 360px;
+	position: absolute;
+}
+.inner-part .img{
+	height: 260px;
+	width: 260px;
+	overflow: hidden;
+	flex-shrink: 0;
+	border-radius: 20px;
+	box-shadow: 2px 3px 15px rgba(56, 252, 56, .3);
+}
+.img img{
+	height: 80%;
+	width: 80%;
+	object-fit: cover;
+	cursor: pointer;
+	/*opacity: 0*/;
+}
+.card{
+	padding: 0 20px 35px;
+	width: 530px;
+	margin-left: 50px;
+	opacity: 0;
+	transition: .6s;
+}
+#tap-1:checked ~ .inner-part .card-1,
+#tap-2:checked ~ .inner-part .card-2,
+#tap-3:checked ~ .inner-part .card-3{
+	opacity: 1;
+	margin-left: 0px;
+	z-index: 100;
+	transition-delay: .3s;
+}
+.card span{
+	display: block;
+	color: #81808a;
+	margin-bottom: 15px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.card .title{
+	font-size: 30px;
+	font-weight: 700;
+	color: #0d0925;
+	margin-bottom: 20px;
+}
+.card .text{
+	font-size: 19px;
+	color: #4e4a67;
+	margin-bottom: 30px;
+	line-height: 1.5em;
+	text-align: justify;
+}
+.card button{
+	display: inline-flex;
+	padding: 15px 20px;
+	border: none;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff0e6 ;
+	font-weight: 600;
+	cursor: pointer;
+	border-radius: 50px;
+	background: black;
+}
+.sliders{
+	position: absolute;
+	bottom: 25px;
+	left: 65%;
+	z-index: 100;
+	transform: translateX(-50%);
+
+}
+.sliders .tap{
+	position: relative;
+	height: 10px;
+	width: 50px;
+	background:#d9d9d9;
+	border-radius: 5px;
+	display: inline-flex;
+	margin: 0 3px;
+	cursor: pointer;
+}
+.sliders .tap:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(5, 77, 5);
+	border-radius: 10px;
+	transition: transform .4s;
+	transform: scaleX(0);
+}
+#tap-1:checked ~ .sliders .tap-1:before,
+#tap-2:checked ~ .sliders .tap-2:before,
+#tap-3:checked ~ .sliders .tap-3:before{
+	transform: scaleX(1);
+	width: 100%;
 }
