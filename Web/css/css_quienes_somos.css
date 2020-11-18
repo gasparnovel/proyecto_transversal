@@ -209,33 +209,94 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	display: block;
 }
 .imagenespacio{
-	height: 1000px;
+	height: 1200px;
 	width: 100%;
 	position: relative;
 }
 .textoconocenos{
-	z-index: 100;
-	color: white;
+	color: black;
 	position: absolute;
 	left: 100px;
-	top: 200px;
+	top: 120px;
 	font-size: 50px;
+	background: white;
+    width: calc(21% - 20px);
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px 5px white;
 
 }
 .textoconocenosdos{
-	color: white;
+	color: black;
 	position: absolute;
 	left: 150px;
-	top: 320px;
+	top: 230px;
 	font-size: 25px;
+	background: white;
+    width: calc(30% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px white;
 }
 .textoconocenostres{
-	color: white;
+	color: black;
+	position: absolute;
+	left: 200px;
+	top: 330px;
+	font-size: 15px;
+	background: white;
+    width: calc(30% - 20px);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px white;
+}
+.textoconocenoscuatro{
+	color: black;
+	position: absolute;
+	right: 150px;
+	top: 600px;
+	font-size: 25px;
+	background: white;
+    width: calc(14% - 15px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 5px white;
+}
+.textoconocenoscinco{
+	color: black;
+	position: absolute;
+	right: 200px;
+	top: 670px;
+	font-size: 15px;
+	background: white;
+    width: calc(30% - 20px);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px white;
+}
+.textoconocenosseis{
+	color: black;
 	position: absolute;
 	left: 150px;
-	top: 400px;
+	top: 970px;
+	font-size: 25px;
+	background: white;
+    width: calc(20% - 32px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 5px white;
+}
+.textoconocenossiete{
+	color: black;
+	position: absolute;
+	left: 200px;
+	top: 1040px;
 	font-size: 15px;
-	text-shadow: -1px 1px  black;
+	background: white;
+    width: calc(30% - 20px);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px white;
 }
 
 /* aqui empieza el css de las valoraciones */
