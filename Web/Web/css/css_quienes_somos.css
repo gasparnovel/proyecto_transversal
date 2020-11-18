@@ -10,7 +10,6 @@ header {
 	width: 100%;
 	overflow: hidden;
 	background-color: black;
-	margin-bottom: 20px;
 }
 .centrar {
 	width: auto;
@@ -63,10 +62,10 @@ a { /* Para los links alpicar lo siguiente*/
     color:rgb(66, 64, 64);   /* Cambiar el color */
 } 
 footer { /* Para el pie de página aplicar lo siguiente*/
-	position: fixed;
-	bottom: 0px;
+	position: absolute;
 	width: 100%;
 	background-color: black;
+	border-top:  rgb(117, 224, 117) 1px solid;
 }
 .main-content{
 	display: flex;
@@ -205,13 +204,42 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 /* aqui empieza el css de quienes somos */
 
+
+.conocenos {
+	display: block;
+}
+.imagenespacio{
+	height: 1000px;
+	width: 100%;
+	position: relative;
+}
+.textoconocenos{
+	z-index: 100;
+	color: white;
+	position: absolute;
+	left: 100px;
+	top: 200px;
+	font-size: 50px;
+
+}
+.textoconocenosdos{
+	color: white;
+	position: absolute;
+	left: 150px;
+	top: 270px;
+	font-size: 20px;
+}
+
+/* aqui empieza el css de las valoraciones */
+
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 .opiniones{
     margin: 0;
-    padding: 10px;
+	padding: 30px;
+	padding-bottom: 50px;
     height: 100%;
     place-items: center;
     background: black;
