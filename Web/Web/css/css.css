@@ -1,0 +1,204 @@
+* { 
+	margin: 0;
+	padding:0;
+    font-family:Arial /* Cambiar la fuente de todo el documento*/
+}
+body {
+    background-color: white /* Cambiar el color de fondo del body */
+}
+header {
+	width: 100%;
+	overflow: hidden;
+	background-color: black;
+	margin-bottom: 20px;
+}
+.centrar {
+	width: auto;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+header .imagenlogo {
+	line-height: 10px;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 6px;
+}
+header .imagenlogoufo{
+	float: left;
+	line-height: 0px;
+}
+img.logo{
+	width: 60px;
+	height: 60px;
+}
+img.logoufo{
+	width: 120px;
+	height: auto;
+	padding-top: 25px;
+	line-height: 10px;
+}
+header nav {
+	float: right;
+	line-height: 10px;
+	padding-top: 17px;
+}
+header nav a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 14px;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition:all 500ms ease;
+
+}
+header nav a:hover {
+	background-color: rgb(117, 224, 117);
+	border-radius: 50px;
+}
+a { /* Para los links alpicar lo siguiente*/
+    color:rgb(66, 64, 64);   /* Cambiar el color */
+} 
+footer { /* Para el pie de página aplicar lo siguiente*/
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: black;
+}
+.main-content{
+	display: flex;
+}
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box h2{
+	font-size: 1.125rem;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.box .content{
+	margin: 20px 0 0 0;
+	position: relative;
+}
+.box .content:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 2px;
+	width: 100%;
+	background: rgb(117, 224, 117);
+}
+.box .content:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	background: rgb(117, 224, 117);
+	top: -10px;
+}
+.left .content p{
+	text-align: justify;
+	color: white;
+}
+.left .content .social{
+	margin: 20px 0 0 0;
+}
+.left .content .social a{
+	padding: 0 2px;
+}
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 12px;
+	transition: 0.3s;
+	color: black;
+}
+.left .content .social a span:hover{
+	background: rgb(117, 224, 117);
+}
+.center .content .fas{
+	font-size: 1.4375rem;
+	background: white;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.center .content .fas:hover{
+	background: rgb(117, 224, 117);
+}
+.center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	padding-left: 10px;
+	color: white;
+}
+.center .content .phone{
+	margin: 15px 0;
+}
+.right form .text{
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	color: white;
+}
+.right form .msg{
+	margin-top: 10px;
+}
+.right form input, .right form textarea{
+	width: 100%;
+	font-size: 1.0625rem;
+	background: white;
+	padding-left: 10px;
+	border: 1px solid black;
+}
+.right form input:focus,
+.right form textarea:focus{
+	outline-color: rgb(117, 224, 117);
+}
+.right form input{
+	height: 35px;
+}
+.right form .btn{
+	margin-top: 10px;
+}
+.right form .btn button{
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: white;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+}
+.right form .btn button:hover{
+	background:rgb(117, 224, 117);
+}
+.bottom center{
+	padding: 5px;
+	font-size: 0.9375rem;
+	background: black;
+}
+.bottom center span{
+	color: white;
+}
+.bottom center a{
+	color: rgb(117, 224, 117);
+	text-decoration: none;
+}
+.bottom center a:hover{
+	text-decoration: underline;
+}
