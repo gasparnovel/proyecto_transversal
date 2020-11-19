@@ -207,6 +207,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 .primeralinea{
 	background-image: url(../imagenes/espacio.jpg);
+	overflow-x: scroll;
 }
 .imagenespacio{
 	height: 1200px;
@@ -214,73 +215,126 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	position: relative;
 	display: block;
 }
-.borde{
+.bordeconocenos{
 	box-sizing: content-box;
-	width: 240px;
+	width: 270px;
+	min-width: 240px;
+	max-width: 270px;
 }
 .textoconocenos{
 	position: relative;
 	background-color: white;
 	padding: 20px;
     border-radius: 20px;
-	box-shadow: 3px 3px 5px white;
+	box-shadow: 2px 2px 2px rgb(117, 224, 117);
 	color:  black;
 	margin-top: 10px;
+	margin-bottom: 50px;
 	font-size: 25px;
 	left: 40px;
 	
 }
+.bordeconocenosdos{
+	box-sizing: content-box;
+	width: 730px;
+	min-width: 700px;
+	max-width: 730px ;
+}
 .textoconocenosdos{
+	position: relative;
 	background-color: white;
-    padding: 25px;
-    border-radius: 25px;
-	box-shadow: 3px 3px 5px white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 2px 2px 2px rgb(117, 224, 117);
 	color:  black;
-	margin: 20px;
-
+	margin-top: 35px;
+	font-size: 18px;
+	left: 100px;
+}
+.bordeconocenostres{
+	box-sizing: content-box;
+	width: 740px;
+	min-width: 710px;
+	max-width: 740px;
 }
 .textoconocenostres{
+	position: relative;
 	background-color: white;
-    padding: 25px;
-    border-radius: 25px;
+	padding: 20px;
+    border-radius: 20px;
 	box-shadow: 3px 3px 5px white;
 	color:  black;
-	margin: 20px 20px;
+	margin-top: 20px;
+	font-size: 15px;
+	left: 180px;
+}
+.bordeconocenoscuatro{
+	box-sizing: content-box;
+	width: 210px;
+	min-width: 190px ;
+	max-width: 210px;
 }
 .textoconocenoscuatro{
+	position: relative;
 	background-color: white;
-    padding: 25px;
-    border-radius: 25px;
-	box-shadow: 3px 3px 5px white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 2px 2px 2px rgb(117, 224, 117);
 	color:  black;
-	margin: 20px;
-
+	margin-top: 60px;
+	font-size: 18px;
+	left: 600px;
+}
+.bordeconocenoscinco{
+	box-sizing: content-box;
+	width: 600px;
+	min-width: 570px;
+	max-width: 600px ;
 }
 .textoconocenoscinco{
+	position: relative;
 	background-color: white;
-    padding: 25px;
-    border-radius: 25px;
+	padding: 20px;
+    border-radius: 20px;
 	box-shadow: 3px 3px 5px white;
 	color:  black;
-	margin: 20px;
-
+	margin-top: 20px;
+	font-size: 15px;
+	left: 680px;
+}
+.bordeconocenosseis{
+	box-sizing: content-box;
+	width: 285px;
+	min-width: 255px;
+	max-width: 285px ;
 }
 .textoconocenosseis{
+	position: relative;
 	background-color: white;
-    padding: 25px;
-    border-radius: 25px;
-	box-shadow: 3px 3px 5px white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 2px 2px 2px rgb(117, 224, 117);
 	color:  black;
-	margin: 20px;
-
+	margin-top: 40px;
+	font-size: 18px;
+	left: 370px;
+}
+.bordeconocenossiete{
+	box-sizing: content-box;
+	width: 600px;
+	min-width: 570px;
+	max-width: 600px;
 }
 .textoconocenossiete{
+	position: relative;
 	background-color: white;
-    padding: 25px;
-    border-radius: 25px;
+	padding: 20px;
+    border-radius: 20px;
 	box-shadow: 3px 3px 5px white;
 	color:  black;
-	margin: 20px;
+	margin-top: 20px;
+	font-size: 15px;
+	left: 460px;
 }
 
 /* aqui empieza el css de las valoraciones */
