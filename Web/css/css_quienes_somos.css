@@ -389,7 +389,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	width: 100%;
 }
 
-.conenedorempresa{
+.contenedorempresa{
 	padding:0.01em 16px;
 }
 
@@ -410,6 +410,27 @@ footer { /* Para el pie de página aplicar lo siguiente*/
     height: 100%;
     place-items: center;
     background-image: url(../imagenes/espacio.jpg);
+}
+.contenedortituloopiniones{
+	box-sizing: content-box;
+	width: 390px;
+	min-width: 360px;
+	max-width: 390px;
+	padding: 30px;
+}
+.tituloopiniones{
+	position: relative;
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 1px 2px 5px rgb(117, 224, 117);
+	color:  black;
+	font-size: 25px;
+	padding-top: 20px;
+	left: 490px;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	border-radius: 30px;
 }
 .envoltorio{
     max-width: 1200px;
