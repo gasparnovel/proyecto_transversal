@@ -1,7 +1,8 @@
 *{ 
 	margin: 0;
 	padding:0;
-	font-family: Arial, Helvetica, sans-serif; /* Cambiar la fuente de todo el documento*/
+    font-family:Arial; /* Cambiar la fuente de todo el documento*/
+	box-sizing: border-box;
 }
 html{
 	overflow-x:hidden;
@@ -208,53 +209,228 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 /* aqui empieza el css de quienes somos */
 
+.primeralinea{
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
 
-.conocenos {
-	display: block;
 }
 .imagenespacio{
-	height: 1000px;
+	height: 1200px;
 	width: 100%;
 	position: relative;
+	display: block;
+}
+.bordeconocenos{
+	box-sizing: content-box;
+	width: 270px;
+	min-width: 240px;
+	max-width: 270px;
 }
 .textoconocenos{
-	z-index: 100;
-	color: white;
-	position: absolute;
-	left: 100px;
-	top: 200px;
-	font-size: 50px;
-
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 2px 2px 2px rgb(117, 224, 117);
+	color:  black;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	font-size: 25px;
+	left: 40px;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	
+}
+.bordeconocenosdos{
+	box-sizing: content-box;
+	width: 730px;
+	min-width: 700px;
+	max-width: 730px ;
 }
 .textoconocenosdos{
-	color: white;
-	position: absolute;
-	left: 150px;
-	top: 320px;
-	font-size: 25px;
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 2px 2px 2px rgb(117, 224, 117);
+	color:  black;
+	margin-top: 35px;
+	font-size: 18px;
+	left: 100px;
+}
+.bordeconocenostres{
+	box-sizing: content-box;
+	width: 740px;
+	min-width: 710px;
+	max-width: 740px;
 }
 .textoconocenostres{
-	color: white;
-	position: absolute;
-	left: 150px;
-	top: 400px;
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 3px 3px 5px white;
+	color:  black;
+	margin-top: 20px;
 	font-size: 15px;
-	text-shadow: -1px 1px  black;
+	left: 180px;
 }
+.bordeconocenoscuatro{
+	box-sizing: content-box;
+	width: 210px;
+	min-width: 190px ;
+	max-width: 210px;
+}
+.textoconocenoscuatro{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 2px 2px 2px rgb(117, 224, 117);
+	color:  black;
+	margin-top: 60px;
+	font-size: 18px;
+	left: 600px;
+}
+.bordeconocenoscinco{
+	box-sizing: content-box;
+	width: 600px;
+	min-width: 570px;
+	max-width: 600px ;
+}
+.textoconocenoscinco{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 3px 3px 5px white;
+	color:  black;
+	margin-top: 20px;
+	font-size: 15px;
+	left: 680px;
+}
+.bordeconocenosseis{
+	box-sizing: content-box;
+	width: 285px;
+	min-width: 255px;
+	max-width: 285px ;
+}
+.textoconocenosseis{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 2px 2px 2px rgb(117, 224, 117);
+	color:  black;
+	margin-top: 40px;
+	font-size: 18px;
+	left: 370px;
+}
+.bordeconocenossiete{
+	box-sizing: content-box;
+	width: 600px;
+	min-width: 570px;
+	max-width: 600px;
+}
+.textoconocenossiete{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 3px 3px 5px white;
+	color:  black;
+	margin-top: 20px;
+	font-size: 15px;
+	left: 460px;
+}
+/* aqui empieza el css de la empresa */
+
+.empresa{
+	background-image: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+}
+.contenedortituloempresa{
+	box-sizing: content-box;
+	width: 390px;
+	min-width: 360px;
+	max-width: 390px;
+}
+.tituloempresa{
+	position: relative;
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 1px 2px 5px rgb(117, 224, 117);
+	color:  black;
+	font-size: 25px;
+	padding-top: 20px;
+	left: 770px;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	border-radius: 30px;
+}
+.contenedorimagenes{
+	overflow: hidden;
+	padding-bottom: 150px;
+	background-image: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+}
+.carta{
+	box-shadow:0 1px 1px white,0 1px 10px 0 white;
+	position: relative;
+	margin: 1em;
+	float: left;
+	left: 550px;
+	background-color: white;
+}
+.margen{
+	margin:16px;
+	width: 20%;
+}
+.tamañoimagenempresa{
+	width: 100%;
+}
+
+.contenedorempresa{
+	padding:0.01em 16px;
+}
+
+
+
+
 
 /* aqui empieza el css de las valoraciones */
 
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 .opiniones{
     margin: 0;
 	padding: 30px;
-	padding-bottom: 50px;
+	padding-bottom: 200px;
     height: 100%;
     place-items: center;
-    background: black;
+	background-image: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+}
+.contenedortituloopiniones{
+	box-sizing: content-box;
+	width: 390px;
+	min-width: 360px;
+	max-width: 390px;
+	padding: 30px;
+}
+.tituloopiniones{
+	position: relative;
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 1px 2px 5px rgb(117, 224, 117);
+	color:  black;
+	font-size: 25px;
+	padding-top: 20px;
+	left: 490px;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	border-radius: 30px;
 }
 .envoltorio{
     max-width: 1200px;
@@ -329,216 +505,4 @@ footer { /* Para el pie de página aplicar lo siguiente*/
     .envoltorio .cajas{
     width: 100%;
     }
-}
-/*
-.blog-card{
-	position: fixed;
-	height: 370px;
-	width: 95%;
-	max-width: 850px ;
-	margin: auto;
-	background: rgb(117, 224, 117, 0.7);
-	border-radius: 25px;
-	box-shadow: 0 10px 5px rgba(56, 252, 56, .6);
-}*/
-/*
-.blog-card .inner-part{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0 25px;
-	height: 360px;
-	position: absolute;
-}*/
-/*
-.inner-part .img{
-	height: 260px;
-	width: 260px;
-	overflow: hidden;
-	flex-shrink: 0;
-	border-radius: 20px;
-	box-shadow: 2px 3px 15px rgba(56, 252, 56, .3);
-}
-/*
-.img img{
-	height: 80%;
-	width: 80%;
-	object-fit: cover;
-	cursor: pointer;
-	opacity: 0;
-}*/
-/*
-.card{
-	padding: 0 20px 35px;
-	width: 530px;
-	margin-left: 50px;
-	opacity: 0;
-	transition: .6s;
-}*/
-/*
-#tap-1:checked ~ .inner-part .card-1,
-#tap-2:checked ~ .inner-part .card-2,
-#tap-3:checked ~ .inner-part .card-3{
-	opacity: 1;
-	margin-left: 0px;
-	z-index: 100;
-	transition-delay: .3s;
-}*/
-/*
-.card span{
-	display: block;
-	color: #81808a;
-	margin-bottom: 15px;
-	font-size: 22px;
-	font-weight: bold;
-}*/
-/*
-.card .title{
-	font-size: 30px;
-	font-weight: 700;
-	color: #0d0925;
-	margin-bottom: 20px;
-}*/
-/*
-.card .text{
-	font-size: 19px;
-	color: #4e4a67;
-	margin-bottom: 30px;
-	line-height: 1.5em;
-	text-align: justify;
-}*/
-/*
-.card button{
-	display: inline-flex;
-	padding: 15px 20px;
-	border: none;
-	font-size: 16px;
-	text-transform: uppercase;
-	color: #fff0e6 ;
-	font-weight: 600;
-	cursor: pointer;
-	border-radius: 50px;
-	background: black;
-}*/
-/*
-.sliders{
-	position: absolute;
-	bottom: 25px;
-	left: 65%;
-	z-index: 100;
-	transform: translateX(-50%);
-
-}*/
-/*
-.sliders .tap{
-	position: relative;
-	height: 10px;
-	width: 50px;
-	background:#d9d9d9;
-	border-radius: 5px;
-	display: inline-flex;
-	margin: 0 3px;
-	cursor: pointer;
-}*/
-/*
-.sliders .tap:before{
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: rgb(5, 77, 5);
-	border-radius: 10px;
-	transition: transform .4s;
-	transform: scaleX(0);
-}*/
-/*
-#tap-1:checked ~ .sliders .tap-1:before,
-#tap-2:checked ~ .sliders .tap-2:before,
-#tap-3:checked ~ .sliders .tap-3:before{
-	transform: scaleX(1);
-	width: 100%;
-} */
-.fondocontenedornave{
-	background-image: url(../imagenes/espacio.jpg);
-	padding-bottom: 150px;
-	background-size: 50%;
-}
-.contenedornave{
-padding: 0 40px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.cartanave{
-height: s;
-width: 350px;
-margin-left: auto;
-margin-right: auto;
-transition: 0.6s;
-background-color:rgb(117, 224, 117, 0.7);
-box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
-text-align: center;
-}
-.cartanave:hover{
-height: auto;
-box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
-}
-.cartanave .nave{
-padding: 25px;
-height: auto;
-width: 100%;
-}
-.cartanave .nave img{
-height: 100%;
-width: 100%;
-object-fit: cover;
-}
-.cartanave .top-textnave{
-padding: 5px;
-
-}
-.cartanave .top-textnave .namenave{
-font-size: 25px;
-font-weight: 600;
-color: #202020;
-}
-.cartanave .top-textnave p{
-font-size: 20px;
-font-weight: 600;
-color: #202020;
-line-height: 20px;
-}
-.cartanave .bottom-textnave{
-padding: 0 20px 10px 20px;
-margin-top: 20px;
-opacity: 0;
-visibility: hidden;
-transition: 0.1s;
-}
-.cartanave:hover .bottom-textnave{
-opacity: 1;
-visibility: visible;
-}
-.cartanave .bottom-textnave .descriptionnave{
-text-align: justify;
-font-weight: 500;
-}
-.cartanave .bottom-textnave .btnnave{
-margin-top: 10px;
-margin:10 10px;
-text-align: left;
-}
-.cartanave .bottom-textnave .btnnave a{
-text-decoration: none;
-background-color: black;
-color: white;
-padding:  5px 8px;
-border-radius: 3px;
-display: inline-flex;
-transition: 0.2s;
-}
-.cartanave .bottom-textnave .btnnave a:hover{
-transform: scale(0.9);
 }
