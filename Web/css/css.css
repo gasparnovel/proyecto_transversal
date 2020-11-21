@@ -7,7 +7,7 @@ html{
 	overflow-x:hidden;
 }
 body {
-	background-color: white /* Cambiar el color de fondo del body */
+	background-color: white;
 }
 header {
 	width: 100%;
@@ -464,6 +464,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	background-image: url(../imagenes/espacio.jpg);
 	padding-bottom: 150px;
 	background-size: 50%;
+	padding-top: 140px;
 }
 .contenedornave{
 padding: 0 40px;
@@ -472,7 +473,6 @@ align-items: center;
 justify-content: space-between;
 }
 .cartanave{
-height: s;
 width: 350px;
 margin-left: auto;
 margin-right: auto;
@@ -502,12 +502,12 @@ padding: 5px;
 .cartanave .top-textnave .namenave{
 font-size: 25px;
 font-weight: 600;
-color: #202020;
+color: black;
 }
 .cartanave .top-textnave p{
 font-size: 20px;
 font-weight: 600;
-color: #202020;
+color: black;
 line-height: 20px;
 }
 .cartanave .bottom-textnave{
