@@ -13,10 +13,7 @@ header {
 	width: 100%;
 	overflow: hidden;
 	background-color: black;
-<<<<<<< HEAD
-=======
 	border: rgb(117, 224, 117) 1px solid;
->>>>>>> 8613c6f899a5ec40729f893910a260d99bfd4303
 }
 .centrar {
 	width: auto;
@@ -72,11 +69,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	position: absolute;
 	width: 100%;
 	background-color: black;
-<<<<<<< HEAD
-	border-top:  rgb(117, 224, 117) 1px solid;
-=======
 	border:  rgb(117, 224, 117) 1px solid;
->>>>>>> 8613c6f899a5ec40729f893910a260d99bfd4303
 }
 .main-content{
 	display: flex;
@@ -211,7 +204,6 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 }
 .bottom center a:hover{
 	text-decoration: underline;
-<<<<<<< HEAD
 }
 
 /* aqui empieza el css de quienes somos */
