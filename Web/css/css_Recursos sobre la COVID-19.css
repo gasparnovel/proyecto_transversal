@@ -1,7 +1,8 @@
 *{ 
 	margin: 0;
 	padding:0;
-    font-family:Arial /* Cambiar la fuente de todo el documento*/
+    font-family: Arial; /* Cambiar la fuente de todo el documento*/
+	box-sizing: border-box;
 }
 html{
 	overflow-x:hidden;
@@ -208,4 +209,201 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 /* Aqui empieza el css de recursos sobre la covid*/
 
+.seccioncovid{
+	background: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+	background-color: white;
+	overflow: hidden;
+	padding: 100px;
+}
+.contenedorcovid{
+	width: 55%;
+	float: right;
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgb(117, 224, 117);
+}
+.contenedorcovid h2{
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.textocovid {
+	font-size: 14px;
+	color: black;
+	line-height: 20px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
 
+@media screen and (max-width: 1200px) {
+    .contenedorcovid{
+    padding: 80px;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .seccioncovid{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.contenedorcovid{
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 600px) {
+	.seccioncovid{
+		padding: 100px 40px;
+	}
+	.contenedorcovid{
+		width: 100%;
+	}
+}
+.seccioncoviddos{
+	background: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+	background-color: white;
+	overflow: hidden;
+	padding: 100px;
+}
+.contenedorcoviddos{
+	width: 55%;
+	float: left;
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px white;
+}
+.contenedorcoviddos h2{
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.contenedorcoviddos h3{
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+.textocoviddos {
+	font-size: 14px;
+	color: black;
+	line-height: 20px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+@media screen and (max-width: 1200px) {
+    .contenedorcoviddos{
+    padding: 80px;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .seccioncoviddos{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.contenedorcoviddos{
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 600px) {
+	.seccioncoviddos{
+		padding: 100px 40px;
+	}
+	.contenedorcoviddos{
+		width: 100%;
+	}
+}
+.seccioncovidtres{
+	background: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+	background-color: white;
+	overflow: hidden;
+	padding: 100px;
+}
+.contenedorcovidtres{
+	width: 55%;
+	float: right;
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgb(117, 224, 117);
+}
+.contenedorcovidtres h2{
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.textocovidtres {
+	font-size: 14px;
+	color: black;
+	line-height: 20px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+@media screen and (max-width: 1200px) {
+    .contenedorcovidtres{
+    padding: 80px;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .seccioncovidtres{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.contenedorcovidtres{
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 600px) {
+	.seccioncovidtres{
+		padding: 100px 40px;
+	}
+	.contenedorcovidtres{
+		width: 100%;
+	}
+}
+.seccioncovidcuatro{
+	background: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+	background-color: white;
+	overflow: hidden;
+	padding: 100px;
+}
+.contenedorcovidcuatro{
+	width: 55%;
+	float: left;
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px white;
+}
+.contenedorcovidcuatro h2{
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.textocovidcuatro {
+	font-size: 14px;
+	color: black;
+	line-height: 20px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedorcovidcuatro{
+    padding: 80px;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .seccioncovidcuatro{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.contenedorcovidcuatro{
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 600px) {
+	.seccioncovidcuatro{
+		padding: 100px 40px;
+	}
+	.contenedorcovidcuatro{
+		width: 100%;
+	}
+}

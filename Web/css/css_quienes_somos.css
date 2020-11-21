@@ -1,7 +1,8 @@
 *{ 
 	margin: 0;
 	padding:0;
-    font-family:Arial /* Cambiar la fuente de todo el documento*/
+    font-family:Arial; /* Cambiar la fuente de todo el documento*/
+	box-sizing: border-box;
 }
 html{
 	overflow-x:hidden;
@@ -211,6 +212,8 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 .primeralinea{
 	background-image: url(../imagenes/espacio.jpg);
 	padding-bottom: 150px;
+	background-size: 50%;
+
 }
 .imagenespacio{
 	height: 1200px;
@@ -345,6 +348,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 .empresa{
 	background-image: url(../imagenes/espacio.jpg);
+	background-size: 50%;
 }
 .contenedortituloempresa{
 	box-sizing: content-box;
@@ -370,8 +374,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	overflow: hidden;
 	padding-bottom: 150px;
 	background-image: url(../imagenes/espacio.jpg);
-
-
+	background-size: 50%;
 }
 .carta{
 	box-shadow:0 1px 1px white,0 1px 10px 0 white;
@@ -399,17 +402,14 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 /* aqui empieza el css de las valoraciones */
 
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 .opiniones{
     margin: 0;
 	padding: 30px;
 	padding-bottom: 200px;
     height: 100%;
     place-items: center;
-    background-image: url(../imagenes/espacio.jpg);
+	background-image: url(../imagenes/espacio.jpg);
+	background-size: 50%;
 }
 .contenedortituloopiniones{
 	box-sizing: content-box;
