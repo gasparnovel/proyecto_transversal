@@ -222,7 +222,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	background-color: white;
 	padding: 15px;
 	border-radius: 10px;
-	box-shadow: 2px 2px 5px rgb(117, 224, 117);
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
 }
 .contenedorcovid h2{
 	margin-bottom: 30px;
@@ -271,7 +271,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	background-color: white;
 	padding: 15px;
 	border-radius: 10px;
-	box-shadow: 2px 2px 5px white;
+	box-shadow: 1px 1px 20px white;
 }
 .contenedorcoviddos h2{
 	margin-bottom: 30px;
@@ -323,7 +323,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	background-color: white;
 	padding: 15px;
 	border-radius: 10px;
-	box-shadow: 2px 2px 5px rgb(117, 224, 117);
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
 }
 .contenedorcovidtres h2{
 	margin-bottom: 30px;
@@ -371,7 +371,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	background-color: white;
 	padding: 15px;
 	border-radius: 10px;
-	box-shadow: 2px 2px 5px white;
+	box-shadow: 1px 1px 20px white;
 }
 .contenedorcovidcuatro h2{
 	margin-bottom: 30px;

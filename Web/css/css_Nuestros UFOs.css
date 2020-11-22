@@ -1,13 +1,14 @@
 *{ 
 	margin: 0;
 	padding:0;
-    font-family:Arial /* Cambiar la fuente de todo el documento*/
+	font-family: Arial, Helvetica, sans-serif; /* Cambiar la fuente de todo el documento*/
+	box-sizing: border-box;
 }
 html{
 	overflow-x:hidden;
 }
 body {
-	background-color: white /* Cambiar el color de fondo del body */
+	background-color: white;
 }
 header {
 	width: 100%;
@@ -65,6 +66,144 @@ header nav a:hover {
 a { /* Para los links alpicar lo siguiente*/
     color:rgb(66, 64, 64);   /* Cambiar el color */
 } 
+.botones{
+	margin-left: auto;
+	margin-bottom: 50px;
+	padding: 0 40px;
+	display: inline-flex; 
+	align-items: center;
+	justify-content: space-between;
+}
+div .show-btn{
+	position: relative;
+	background-color:rgb(117, 224, 117, 0.7);
+	padding: 10px 20px;
+	font-size: 25px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+}
+.destinos, .show-btn, .arealogin{
+	position: relative;
+	margin-left: auto;
+	display: inline;
+}
+.destinos{
+	position: relative;
+	top: -50%;
+	left: 7%;
+}
+input[type="checkbox"]{
+	display: none;
+}
+.show-btn:hover{
+	text-decoration: underline;
+	color: blanchedalmond;
+}
+.arealogin, .arearuta{
+	position: relative;
+	display: none;
+	height: 450px;
+	width: 410px;
+	padding: 30px;
+	background-color:rgb(117, 224, 117, 0.7) ;
+	box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+}
+#show:checked ~ .show-btn{
+	display: none;
+}
+#show:checked ~ .arealogin{
+	display: block;
+}
+#show-dest:checked ~ .show-btn{
+	display: none;
+}
+#show-dest:checked ~ .arearuta{
+	display: block;
+	margin: auto;
+}
+.arealogin  .close-btn{
+	position: absolute;
+	cursor: pointer;
+	font-size: 18px;
+}
+.arearuta  .close-btn{
+	position: absolute;
+	cursor: pointer;
+	font-size: 18px;
+}
+.arealogin .close-btn:hover{
+	color: blanchedalmond;
+}
+.arearuta .close-btn:hover{
+	color: blanchedalmond;
+}
+.arealogin .text{
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+.arearuta .text{
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+.arealogin form .datalogin{
+	height: 45px;
+	width: 100%;
+	margin: 40px 0;
+}
+form > label{
+	font-size: 18px;
+}
+.arearuta form .datalogin{
+	height: 45px;
+	width: 100%;
+	margin: 40px 0;
+}
+form .datalogin input{
+	height: 100%;
+	width: 100%;
+	padding-left: 10px;
+	font-size: 17px;
+	border: 1px solid lightgray;
+}
+form ~ input:focus{
+	outline-color: rgb(117, 224, 117);
+}
+form .btnlogin{
+	margin:  30px 0;
+	height: 45px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+form .btnlogin .inner{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	z-index: -1;
+	background-color:white ;
+}
+form ~ a{
+	font-weight: 500;
+	color: black;
+	text-decoration: none;  
+}
+form ~ a:hover{
+	text-decoration: underline;
+	color: blanchedalmond;
+}
+form .btnlogin  button{
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
 footer { /* Para el pie de página aplicar lo siguiente*/
 	position: absolute;
 	width: 100%;
@@ -206,5 +345,278 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	text-decoration: underline;
 }
 
-/* Aqui empieza el css de nuestros ufos
+/* aqui empieza el css de nuestros ufos*/
 
+.fondocontenedornave{
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
+	padding-top: 140px;
+}
+.contenedornave{
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.cartanave{
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+transition: 0.6s;
+background-color:rgb(117, 224, 117, 0.7);
+box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+text-align: center;
+}
+.cartanave:hover{
+height: auto;
+box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
+}
+.cartanave .nave{
+padding: 25px;
+height: auto;
+width: 100%;
+}
+.cartanave .nave img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.cartanave .top-textnave{
+padding: 5px;
+
+}
+.cartanave .top-textnave .namenave{
+font-size: 25px;
+font-weight: 600;
+color: black;
+}
+.cartanave .top-textnave p{
+font-size: 20px;
+font-weight: 600;
+color: black;
+line-height: 20px;
+}
+.cartanave .bottom-textnave{
+padding: 0 20px 10px 20px;
+margin-top: 20px;
+opacity: 0;
+visibility: hidden;
+transition: 0.1s;
+}
+.cartanave:hover .bottom-textnave{
+opacity: 1;
+visibility: visible;
+}
+.cartanave .bottom-textnave .descriptionnave{
+text-align: justify;
+font-weight: 500;
+}
+.listadesordenadanave{
+	text-align: left;
+	padding-left: 70px;
+}
+.listaordenadanave{
+	padding-left: 30px;
+}
+
+
+.fondocontenedornavedos{
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
+	padding-top: 140px;
+}
+.contenedornavedos{
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.cartanavedos{
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+transition: 0.6s;
+background-color:rgb(117, 224, 117, 0.7);
+box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+text-align: center;
+}
+.cartanavedos:hover{
+height: auto;
+box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
+}
+.cartanavedos .navedos{
+padding: 25px;
+height: auto;
+width: 100%;
+}
+.cartanavedos .navedos img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.cartanavedos .top-textnavedos{
+padding: 5px;
+
+}
+.cartanavedos .top-textnavedos .namenavedos{
+font-size: 25px;
+font-weight: 600;
+color: black;
+}
+.cartanavedos .top-textnavedos p{
+font-size: 20px;
+font-weight: 600;
+color: black;
+line-height: 20px;
+}
+.cartanavedos .bottom-textnavedos{
+padding: 0 20px 10px 20px;
+margin-top: 20px;
+opacity: 0;
+visibility: hidden;
+transition: 0.1s;
+}
+.cartanavedos:hover .bottom-textnavedos{
+opacity: 1;
+visibility: visible;
+}
+.cartanavedos .bottom-textnavedos .descriptionnavedos{
+text-align: justify;
+font-weight: 500;
+}
+
+
+.fondocontenedornavetres{
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
+	padding-top: 140px;
+}
+.contenedornavetres{
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.cartanavetres{
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+transition: 0.6s;
+background-color:rgb(117, 224, 117, 0.7);
+box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+text-align: center;
+}
+.cartanavetres:hover{
+height: auto;
+box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
+}
+.cartanavetres .navetres{
+padding: 25px;
+height: auto;
+width: 100%;
+}
+.cartanavetres .navetres img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.cartanavetres .top-textnavetres{
+padding: 5px;
+
+}
+.cartanavetres .top-textnavetres .namenavetres{
+font-size: 25px;
+font-weight: 600;
+color: black;
+}
+.cartanavetres .top-textnavetres p{
+font-size: 20px;
+font-weight: 600;
+color: black;
+line-height: 20px;
+}
+.cartanavetres .bottom-textnavetres{
+padding: 0 20px 10px 20px;
+margin-top: 20px;
+opacity: 0;
+visibility: hidden;
+transition: 0.1s;
+}
+.cartanavetres:hover .bottom-textnavetres{
+opacity: 1;
+visibility: visible;
+}
+.cartanavetres .bottom-textnavetres .descriptionnavetres{
+text-align: justify;
+font-weight: 500;
+}
+
+
+.fondocontenedornavecuatro{
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
+	padding-top: 140px;
+}
+.contenedornavecuatro{
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.cartanavecuatro{
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+transition: 0.6s;
+background-color:rgb(117, 224, 117, 0.7);
+box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+text-align: center;
+}
+.cartanavecuatro:hover{
+height: auto;
+box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
+}
+.cartanavecuatro .navecuatro{
+padding: 25px;
+height: auto;
+width: 100%;
+}
+.cartanavecuatro .navecuatro img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.cartanavecuatro .top-textnavecuatro{
+padding: 5px;
+
+}
+.cartanavecuatro .top-textnavecuatro .namenavecuatro{
+font-size: 25px;
+font-weight: 600;
+color: black;
+}
+.cartanavecuatro .top-textnavecuatro p{
+font-size: 20px;
+font-weight: 600;
+color: black;
+line-height: 20px;
+}
+.cartanavecuatro .bottom-textnavecuatro{
+padding: 0 20px 10px 20px;
+margin-top: 20px;
+opacity: 0;
+visibility: hidden;
+transition: 0.1s;
+}
+.cartanavecuatro:hover .bottom-textnavecuatro{
+opacity: 1;
+visibility: visible;
+}
+.cartanavecuatro .bottom-textnavecuatro .descriptionnavecuatro{
+text-align: justify;
+font-weight: 500;
+}
