@@ -65,6 +65,144 @@ header nav a:hover {
 a { /* Para los links alpicar lo siguiente*/
     color:rgb(66, 64, 64);   /* Cambiar el color */
 } 
+.botones{
+	margin-left: auto;
+	margin-bottom: 50px;
+	padding: 0 40px;
+	display: inline-flex; 
+	align-items: center;
+	justify-content: space-between;
+}
+div .show-btn{
+	position: relative;
+	background-color:rgb(117, 224, 117, 0.7);
+	padding: 10px 20px;
+	font-size: 25px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+}
+.destinos, .show-btn, .arealogin{
+	position: relative;
+	margin-left: auto;
+	display: inline;
+}
+.destinos{
+	position: relative;
+	top: -50%;
+	left: 7%;
+}
+input[type="checkbox"]{
+	display: none;
+}
+.show-btn:hover{
+	text-decoration: underline;
+	color: blanchedalmond;
+}
+.arealogin, .arearuta{
+	position: relative;
+	display: none;
+	height: 450px;
+	width: 410px;
+	padding: 30px;
+	background-color:rgb(117, 224, 117, 0.7) ;
+	box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+}
+#show:checked ~ .show-btn{
+	display: none;
+}
+#show:checked ~ .arealogin{
+	display: block;
+}
+#show-dest:checked ~ .show-btn{
+	display: none;
+}
+#show-dest:checked ~ .arearuta{
+	display: block;
+	margin: auto;
+}
+.arealogin  .close-btn{
+	position: absolute;
+	cursor: pointer;
+	font-size: 18px;
+}
+.arearuta  .close-btn{
+	position: absolute;
+	cursor: pointer;
+	font-size: 18px;
+}
+.arealogin .close-btn:hover{
+	color: blanchedalmond;
+}
+.arearuta .close-btn:hover{
+	color: blanchedalmond;
+}
+.arealogin .text{
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+.arearuta .text{
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+.arealogin form .datalogin{
+	height: 45px;
+	width: 100%;
+	margin: 40px 0;
+}
+form > label{
+	font-size: 18px;
+}
+.arearuta form .datalogin{
+	height: 45px;
+	width: 100%;
+	margin: 40px 0;
+}
+form .datalogin input{
+	height: 100%;
+	width: 100%;
+	padding-left: 10px;
+	font-size: 17px;
+	border: 1px solid lightgray;
+}
+form ~ input:focus{
+	outline-color: rgb(117, 224, 117);
+}
+form .btnlogin{
+	margin:  30px 0;
+	height: 45px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+form .btnlogin .inner{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	z-index: -1;
+	background-color:white ;
+}
+form ~ a{
+	font-weight: 500;
+	color: black;
+	text-decoration: none;  
+}
+form ~ a:hover{
+	text-decoration: underline;
+	color: blanchedalmond;
+}
+form .btnlogin  button{
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
 footer { /* Para el pie de página aplicar lo siguiente*/
 	position: absolute;
 	width: 100%;
@@ -330,136 +468,6 @@ footer { /* Para el pie de página aplicar lo siguiente*/
     width: 100%;
     }
 }
-/*
-.blog-card{
-	position: fixed;
-	height: 370px;
-	width: 95%;
-	max-width: 850px ;
-	margin: auto;
-	background: rgb(117, 224, 117, 0.7);
-	border-radius: 25px;
-	box-shadow: 0 10px 5px rgba(56, 252, 56, .6);
-}*/
-/*
-.blog-card .inner-part{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0 25px;
-	height: 360px;
-	position: absolute;
-}*/
-/*
-.inner-part .img{
-	height: 260px;
-	width: 260px;
-	overflow: hidden;
-	flex-shrink: 0;
-	border-radius: 20px;
-	box-shadow: 2px 3px 15px rgba(56, 252, 56, .3);
-}
-/*
-.img img{
-	height: 80%;
-	width: 80%;
-	object-fit: cover;
-	cursor: pointer;
-	opacity: 0;
-}*/
-/*
-.card{
-	padding: 0 20px 35px;
-	width: 530px;
-	margin-left: 50px;
-	opacity: 0;
-	transition: .6s;
-}*/
-/*
-#tap-1:checked ~ .inner-part .card-1,
-#tap-2:checked ~ .inner-part .card-2,
-#tap-3:checked ~ .inner-part .card-3{
-	opacity: 1;
-	margin-left: 0px;
-	z-index: 100;
-	transition-delay: .3s;
-}*/
-/*
-.card span{
-	display: block;
-	color: #81808a;
-	margin-bottom: 15px;
-	font-size: 22px;
-	font-weight: bold;
-}*/
-/*
-.card .title{
-	font-size: 30px;
-	font-weight: 700;
-	color: #0d0925;
-	margin-bottom: 20px;
-}*/
-/*
-.card .text{
-	font-size: 19px;
-	color: #4e4a67;
-	margin-bottom: 30px;
-	line-height: 1.5em;
-	text-align: justify;
-}*/
-/*
-.card button{
-	display: inline-flex;
-	padding: 15px 20px;
-	border: none;
-	font-size: 16px;
-	text-transform: uppercase;
-	color: #fff0e6 ;
-	font-weight: 600;
-	cursor: pointer;
-	border-radius: 50px;
-	background: black;
-}*/
-/*
-.sliders{
-	position: absolute;
-	bottom: 25px;
-	left: 65%;
-	z-index: 100;
-	transform: translateX(-50%);
-
-}*/
-/*
-.sliders .tap{
-	position: relative;
-	height: 10px;
-	width: 50px;
-	background:#d9d9d9;
-	border-radius: 5px;
-	display: inline-flex;
-	margin: 0 3px;
-	cursor: pointer;
-}*/
-/*
-.sliders .tap:before{
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: rgb(5, 77, 5);
-	border-radius: 10px;
-	transition: transform .4s;
-	transform: scaleX(0);
-}*/
-/*
-#tap-1:checked ~ .sliders .tap-1:before,
-#tap-2:checked ~ .sliders .tap-2:before,
-#tap-3:checked ~ .sliders .tap-3:before{
-	transform: scaleX(1);
-	width: 100%;
-} */
 .fondocontenedornave{
 	background-image: url(../imagenes/espacio.jpg);
 	padding-bottom: 150px;
