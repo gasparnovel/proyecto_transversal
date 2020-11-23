@@ -407,3 +407,11 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 		width: 100%;
 	}
 }
+.centraralfinal{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.credit{
+	text-align: center;
+	color: rgb(117, 224, 117);
+}

@@ -620,3 +620,11 @@ visibility: visible;
 text-align: justify;
 font-weight: 500;
 }
+.centraralfinal{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.credit{
+	text-align: center;
+	color: rgb(117, 224, 117);
+}
