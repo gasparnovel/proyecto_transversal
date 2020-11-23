@@ -469,7 +469,55 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 		width: 100%;
 	}
 }
+.seccioninicioestrella{
+	background: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+	background-color: white;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.contenedorinicioestrella{
+	position: relative;
+	left: 42%;
+	width: 17%;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+}
+.textoinicioestrella {
+	font-size: 30px;
+	color: black;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 5px;
+	text-decoration: underline;
+	font-weight: bold;
+}
 
+@media screen and (max-width: 1200px) {
+    .contenedorinicioestrella{
+    padding: 80px;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .seccioninicioestrella{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.contenedorinicioestrella{
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 600px) {
+	.seccioninicioestrella{
+		padding: 100px 40px;
+	}
+	.contenedorinicioestrella{
+		width: 100%;
+	}
+}
 /* aqui empieza el css de inicio login y naves */
 
 

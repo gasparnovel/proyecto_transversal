@@ -223,9 +223,9 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 }
 .bordeconocenos{
 	box-sizing: content-box;
-	width: 270px;
-	min-width: 240px;
-	max-width: 270px;
+	width: 250px;
+	min-width: 250px;
+	max-width: 250px;
 }
 .textoconocenos{
 	position: relative;
@@ -237,16 +237,17 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	margin-top: 10px;
 	margin-bottom: 50px;
 	font-size: 25px;
-	left: 40px;
+	left: 60px;
+	top: 10px;
 	text-decoration-line: underline;
 	text-decoration-style: solid;
 	
 }
 .bordeconocenosdos{
 	box-sizing: content-box;
-	width: 730px;
-	min-width: 700px;
-	max-width: 730px ;
+	width: 630px;
+	min-width: 630px;
+	max-width:  630px;
 }
 .textoconocenosdos{
 	position: relative;
@@ -257,7 +258,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	color:  black;
 	margin-top: 35px;
 	font-size: 18px;
-	left: 100px;
+	left: 150px;
 }
 .bordeconocenostres{
 	box-sizing: content-box;
@@ -274,13 +275,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	color:  black;
 	margin-top: 20px;
 	font-size: 15px;
-	left: 180px;
+	left: 200px;
 }
 .bordeconocenoscuatro{
 	box-sizing: content-box;
-	width: 210px;
+	width: 190px;
 	min-width: 190px ;
-	max-width: 210px;
+	max-width: 190px;
 }
 .textoconocenoscuatro{
 	position: relative;
@@ -291,7 +292,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	color:  black;
 	margin-top: 60px;
 	font-size: 18px;
-	left: 600px;
+	left: 700px;
 }
 .bordeconocenoscinco{
 	box-sizing: content-box;
@@ -308,13 +309,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	color:  black;
 	margin-top: 20px;
 	font-size: 15px;
-	left: 680px;
+	left: 760px;
 }
 .bordeconocenosseis{
 	box-sizing: content-box;
-	width: 285px;
+	width: 255px;
 	min-width: 255px;
-	max-width: 285px ;
+	max-width: 255px ;
 }
 .textoconocenosseis{
 	position: relative;
@@ -325,7 +326,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	color:  black;
 	margin-top: 40px;
 	font-size: 18px;
-	left: 370px;
+	left: 400px;
 }
 .bordeconocenossiete{
 	box-sizing: content-box;
@@ -353,7 +354,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 .contenedortituloempresa{
 	box-sizing: content-box;
 	width: 390px;
-	min-width: 360px;
+	min-width: 390px;
 	max-width: 390px;
 }
 .tituloempresa{
@@ -365,7 +366,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	color:  black;
 	font-size: 25px;
 	padding-top: 20px;
-	left: 770px;
+	left: 540px;
 	text-decoration: underline;
 	text-decoration-style: solid;
 	border-radius: 30px;
@@ -381,7 +382,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	position: relative;
 	margin: 1em;
 	float: left;
-	left: 550px;
+	left: 400px;
 	background-color: white;
 }
 .margen{
