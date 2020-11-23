@@ -251,7 +251,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	background: rgb(117, 224, 117);
 	top: -10px;
 }
-.left .content p{
+.content > p{
 	text-align: justify;
 	color: white;
 }
