@@ -22,13 +22,13 @@ header {
 	margin: auto;
 	overflow: hidden;
 }
-header .imagenlogo {
+header .imagen_logo {
 	line-height: 10px;
 	float: left;
 	padding-top: 5px;
 	padding-bottom: 6px;
 }
-header .imagenlogoufo{
+header .imagen_logo_ufo{
 	float: left;
 	line-height: 0px;
 }
@@ -36,7 +36,7 @@ img.logo{
 	width: 60px;
 	height: 60px;
 }
-img.logoufo{
+img.logo_ufo{
 	width: 120px;
 	height: auto;
 	padding-top: 25px;
@@ -209,25 +209,25 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 /* aqui empieza el css de quienes somos */
 
-.primeralinea{
+.primera_linea{
 	background-image: url(../imagenes/espacio.jpg);
 	padding-bottom: 150px;
 	background-size: 50%;
 
 }
-.imagenespacio{
+.imagene_spacio{
 	height: 1200px;
 	width: 100%;
 	position: relative;
 	display: block;
 }
-.bordeconocenos{
+.borde_conocenos{
 	box-sizing: content-box;
 	width: 250px;
 	min-width: 250px;
 	max-width: 250px;
 }
-.textoconocenos{
+.texto_conocenos{
 	position: relative;
 	background-color: white;
 	padding: 20px;
@@ -243,13 +243,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	text-decoration-style: solid;
 	
 }
-.bordeconocenosdos{
+.borde_conocenos_dos{
 	box-sizing: content-box;
 	width: 630px;
 	min-width: 630px;
 	max-width:  630px;
 }
-.textoconocenosdos{
+.texto_conocenos_dos{
 	position: relative;
 	background-color: white;
 	padding: 20px;
@@ -260,13 +260,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	font-size: 18px;
 	left: 150px;
 }
-.bordeconocenostres{
+.borde_conocenos_tres{
 	box-sizing: content-box;
 	width: 740px;
 	min-width: 710px;
 	max-width: 740px;
 }
-.textoconocenostres{
+.texto_conocenostres{
 	position: relative;
 	background-color: white;
 	padding: 20px;
@@ -277,13 +277,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	font-size: 15px;
 	left: 200px;
 }
-.bordeconocenoscuatro{
+.borde_conocenos_cuatro{
 	box-sizing: content-box;
 	width: 190px;
 	min-width: 190px ;
 	max-width: 190px;
 }
-.textoconocenoscuatro{
+.texto_conocenos_cuatro{
 	position: relative;
 	background-color: white;
 	padding: 20px;
@@ -294,13 +294,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	font-size: 18px;
 	left: 700px;
 }
-.bordeconocenoscinco{
+.borde_conocenos_cinco{
 	box-sizing: content-box;
 	width: 600px;
 	min-width: 570px;
 	max-width: 600px ;
 }
-.textoconocenoscinco{
+.texto_conocenos_cinco{
 	position: relative;
 	background-color: white;
 	padding: 20px;
@@ -311,13 +311,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	font-size: 15px;
 	left: 760px;
 }
-.bordeconocenosseis{
+.borde_conocenos_seis{
 	box-sizing: content-box;
 	width: 255px;
 	min-width: 255px;
 	max-width: 255px ;
 }
-.textoconocenosseis{
+.texto_conocenos_seis{
 	position: relative;
 	background-color: white;
 	padding: 20px;
@@ -328,13 +328,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	font-size: 18px;
 	left: 400px;
 }
-.bordeconocenossiete{
+.borde_conocenos_siete{
 	box-sizing: content-box;
 	width: 600px;
 	min-width: 570px;
 	max-width: 600px;
 }
-.textoconocenossiete{
+.texto_conocenos_siete{
 	position: relative;
 	background-color: white;
 	padding: 20px;
@@ -351,13 +351,13 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	background-image: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 }
-.contenedortituloempresa{
+.contenedor_titulo_empresa{
 	box-sizing: content-box;
 	width: 390px;
 	min-width: 390px;
 	max-width: 390px;
 }
-.tituloempresa{
+.titulo_empresa{
 	position: relative;
 	text-align: center;
 	background-color: white;
@@ -371,7 +371,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	text-decoration-style: solid;
 	border-radius: 30px;
 }
-.contenedorimagenes{
+.contenedor_imagenes{
 	overflow: hidden;
 	padding-bottom: 150px;
 	background-image: url(../imagenes/espacio.jpg);
@@ -389,11 +389,11 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	margin:16px;
 	width: 20%;
 }
-.tamañoimagenempresa{
+.tamaño_imagen_empresa{
 	width: 100%;
 }
 
-.contenedorempresa{
+.contenedor_empresa{
 	padding:0.01em 16px;
 }
 
@@ -412,14 +412,14 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	background-image: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 }
-.contenedortituloopiniones{
+.contenedor_titulo_opiniones{
 	box-sizing: content-box;
 	width: 390px;
 	min-width: 360px;
 	max-width: 390px;
 	padding: 30px;
 }
-.tituloopiniones{
+.titulo_opiniones{
 	position: relative;
 	text-align: center;
 	background-color: white;
@@ -478,21 +478,21 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 .cajas .informacion .stars i{
     color:  rgb(117, 224, 117);
 }
-.cajas .cajas .imagenesclientes{
+.cajas .cajas .imagenes_clientes{
     height: 75px;
     width: 75px;
     padding: 3px;
     background: black;
     border-radius: 50%;
 }
-.cajas .imagenesclientes img{
+.cajas .imagenes_clientes img{
     height: 70px;
     width: 70px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid  black;
 }
-.cajas:hover .contenido .imagenesclientes img{
+.cajas:hover .contenido .imagenes_clientes img{
     border-color: rgb(117, 224, 117);
 }
 
@@ -507,7 +507,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
     width: 100%;
     }
 }
-.centraralfinal{
+.centrar_al_final{
 	text-align: center;
 	padding-bottom: 10px;
 }
