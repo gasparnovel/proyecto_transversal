@@ -22,13 +22,13 @@ header {
 	margin: auto;
 	overflow: hidden;
 }
-header .imagenlogo {
+header .imagen_logo {
 	line-height: 10px;
 	float: left;
 	padding-top: 5px;
 	padding-bottom: 6px;
 }
-header .imagenlogoufo{
+header .imagen_logo_ufo{
 	float: left;
 	line-height: 0px;
 }
@@ -36,7 +36,7 @@ img.logo{
 	width: 60px;
 	height: 60px;
 }
-img.logoufo{
+img.logo_ufo{
 	width: 120px;
 	height: auto;
 	padding-top: 25px;
@@ -82,7 +82,7 @@ div .show-btn{
 	cursor: pointer;
 	box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
 }
-.destinos, .show-btn, .arealogin{
+.destinos, .show-btn, .area_login{
 	position: relative;
 	margin-left: auto;
 	display: inline;
@@ -99,7 +99,7 @@ input[type="checkbox"]{
 	text-decoration: underline;
 	color: blanchedalmond;
 }
-.arealogin, .arearuta{
+.area_login, .arearuta{
 	position: relative;
 	display: none;
 	height: 450px;
@@ -111,7 +111,7 @@ input[type="checkbox"]{
 #show:checked ~ .show-btn{
 	display: none;
 }
-#show:checked ~ .arealogin{
+#show:checked ~ .area_login{
 	display: block;
 }
 #show-dest:checked ~ .show-btn{
@@ -121,7 +121,7 @@ input[type="checkbox"]{
 	display: block;
 	margin: auto;
 }
-.arealogin  .close-btn{
+.area_login  .close-btn{
 	position: absolute;
 	cursor: pointer;
 	font-size: 18px;
@@ -131,13 +131,13 @@ input[type="checkbox"]{
 	cursor: pointer;
 	font-size: 18px;
 }
-.arealogin .close-btn:hover{
+.area_login .close-btn:hover{
 	color: blanchedalmond;
 }
 .arearuta .close-btn:hover{
 	color: blanchedalmond;
 }
-.arealogin .text{
+.area_login .text{
 	font-size: 25px;
 	font-weight: 600;
 	text-align: center;
@@ -147,7 +147,7 @@ input[type="checkbox"]{
 	font-weight: 600;
 	text-align: center;
 }
-.arealogin form .datalogin{
+.area_login form .data_login{
 	height: 45px;
 	width: 100%;
 	margin: 40px 0;
@@ -155,37 +155,37 @@ input[type="checkbox"]{
 form > label{
 	font-size: 18px;
 }
-.arearuta form .datalogin{
+.arearuta form .data_login{
 	height: 45px;
 	width: 100%;
 	margin: 40px 0;
 }
-form .datalogin input{
+form .data_login input{
 	height: 100%;
 	width: 100%;
 	padding-left: 10px;
 	font-size: 17px;
 	border: 1px solid lightgray;
 }
-.dataloginselect{
+.data_login_select{
 	height: 45px;
 	width: 100%;
 	font-size: 16px;
 }
-.dataloginselect > option{
+.data_login_select > option{
 	font-size: 16px;
 }
 form ~ input:focus{
 	outline-color: rgb(117, 224, 117);
 }
-form .btnlogin{
+form .btn_login{
 	margin:  30px 0;
 	height: 45px;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
 }
-form .btnlogin .inner{
+form .btn_login .inner{
 	height: 100%;
 	width: 300%;
 	position: absolute;
@@ -202,7 +202,7 @@ form ~ a:hover{
 	text-decoration: underline;
 	color: blanchedalmond;
 }
-form .btnlogin  button{
+form .btn_login  button{
 	height: 100%;
 	width: 100%;
 	border: none;
@@ -355,7 +355,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 /* aqui empieza el css de inicio */
 
-.seccioninicio{
+.seccion_inicio{
 	background: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 	background-color: white;
@@ -363,7 +363,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	padding-top: 140px;
 	padding-bottom: 30px;
 }
-.contenedorinicio{
+.contenedor_inicio{
 	position: relative;
 	left: 24%;
 	width: 55%;
@@ -372,27 +372,27 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	border-radius: 30px;
 	box-shadow: 1px 1px 20px rgb(117, 224, 117);
 }
-.contenedorinicio h2{
+.contenedor_inicio h2{
 	margin-bottom: 30px;
 	margin-top: 30px;
 	font-size: 30px;
 	text-align: center;
 	text-decoration: underline;
 }
-.contenedorinicio h4{
+.contenedor_inicio h4{
 	margin-bottom: 30px;
 	margin-top: 30px;
 	font-size: 20px;
 	
 }
-.textoiniciocentrado {
+.texto_inicio_centrado {
 	font-size: 14px;
 	color: black;
 	line-height: 20px;
 	text-align: center;
 	margin-bottom: 40px;
 }
-.textoinicio {
+.texto_inicio {
 	font-size: 14px;
 	color: black;
 	line-height: 20px;
@@ -401,28 +401,28 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 }
 
 @media screen and (max-width: 1200px) {
-    .contenedorinicio{
+    .contenedor_inicio{
     padding: 80px;
     }
 }
 @media  screen and (max-width: 1000px) {
-    .seccioninicio{
+    .seccion_inicio{
 		background-size: 100%;
 		padding: 100px 40px;
 	}
-	.contenedorinicio{
+	.contenedor_inicio{
 		width: 100%;
 	}
 }
 @media  screen and (max-width: 600px) {
-	.seccioninicio{
+	.seccion_inicio{
 		padding: 100px 40px;
 	}
-	.contenedorinicio{
+	.contenedor_inicio{
 		width: 100%;
 	}
 }
-.seccioniniciodos{
+.seccion_inicio_dos{
 	background: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 	background-color: white;
@@ -430,7 +430,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	padding-top: 70px;
 	padding-bottom: 170px;
 }
-.contenedoriniciodos{
+.contenedor_inicio_dos{
 	position: relative;
 	left: 24%;
 	width: 55%;
@@ -439,7 +439,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	border-radius: 10px;
 	box-shadow: 1px 1px 20px rgb(117, 224, 117);
 }
-.textoiniciodos {
+.texto_inicio_dos {
 	font-size: 14px;
 	color: black;
 	line-height: 20px;
@@ -448,24 +448,24 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 }
 
 @media screen and (max-width: 1200px) {
-    .contenedoriniciodos{
+    .contenedor_inicio_dos{
     padding: 80px;
     }
 }
 @media  screen and (max-width: 1000px) {
-    .seccioniniciodos{
+    .seccion_inicio_dos{
 		background-size: 100%;
 		padding: 100px 40px;
 	}
-	.contenedoriniciodos{
+	.contenedor_inicio_dos{
 		width: 100%;
 	}
 }
 @media  screen and (max-width: 600px) {
-	.seccioniniciodos{
+	.seccion_inicio_dos{
 		padding: 100px 40px;
 	}
-	.contenedoriniciodos{
+	.contenedor_inicio_dos{
 		width: 100%;
 	}
 }
@@ -474,19 +474,19 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 
 
-.fondocontenedornave{
+.fondo_contenedor_nave{
 	background-image: url(../imagenes/espacio.jpg);
 	padding-bottom: 150px;
 	background-size: 50%;
 	padding-top: 140px;
 }
-.contenedornave{
+.contenedor_nave{
 padding: 0 40px;
 display: flex;
 align-items: center;
 justify-content: space-between;
 }
-.cartanave{
+.carta_nave{
 width: 350px;
 margin-left: auto;
 margin-right: auto;
@@ -495,56 +495,56 @@ background-color:rgb(117, 224, 117, 0.7);
 box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
 text-align: center;
 }
-.cartanave:hover{
+.carta_nave:hover{
 height: auto;
 box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
 }
-.cartanave .nave{
+.carta_nave .nave{
 padding: 25px;
 height: auto;
 width: 100%;
 }
-.cartanave .nave img{
+.carta_nave .nave img{
 height: 100%;
 width: 100%;
 object-fit: cover;
 }
-.cartanave .top-textnave{
+.carta_nave .top-textnave{
 padding: 5px;
 
 }
-.cartanave .top-textnave .namenave{
+.carta_nave .top-textnave .name_nave{
 font-size: 25px;
 font-weight: 600;
 color: black;
 }
-.cartanave .top-textnave p{
+.carta_nave .top-textnave p{
 font-size: 20px;
 font-weight: 600;
 color: black;
 line-height: 20px;
 }
-.cartanave .bottom-textnave{
+.carta_nave .bottom-textnave{
 padding: 0 20px 10px 20px;
 margin-top: 20px;
 opacity: 0;
 visibility: hidden;
 transition: 0.1s;
 }
-.cartanave:hover .bottom-textnave{
+.carta_nave:hover .bottom-textnave{
 opacity: 1;
 visibility: visible;
 }
-.cartanave .bottom-textnave .descriptionnave{
+.carta_nave .bottom-textnave .description_nave{
 text-align: justify;
 font-weight: 500;
 }
-.cartanave .bottom-textnave .btnnave{
+.carta_nave .bottom-textnave .btn_nave{
 margin-top: 10px;
 margin:10 10px;
 text-align: left;
 }
-.cartanave .bottom-textnave .btnnave a{
+.carta_nave .bottom-textnave .btn_nave a{
 text-decoration: none;
 background-color: black;
 color: white;
@@ -553,6 +553,6 @@ border-radius: 3px;
 display: inline-flex;
 transition: 0.2s;
 }
-.cartanave .bottom-textnave .btnnave a:hover{
+.carta_nave .bottom-textnave .btn_nave a:hover{
 transform: scale(0.9);
 }
