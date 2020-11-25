@@ -22,13 +22,13 @@ header {
 	margin: auto;
 	overflow: hidden;
 }
-header .imagenlogo {
+header .imagen_logo {
 	line-height: 10px;
 	float: left;
 	padding-top: 5px;
 	padding-bottom: 6px;
 }
-header .imagenlogoufo{
+header .imagen_logo_ufo{
 	float: left;
 	line-height: 0px;
 }
@@ -36,7 +36,7 @@ img.logo{
 	width: 60px;
 	height: 60px;
 }
-img.logoufo{
+img.logo_ufo{
 	width: 120px;
 	height: auto;
 	padding-top: 25px;
@@ -209,14 +209,14 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 
 /* Aqui empieza el css de recursos sobre la covid*/
 
-.seccioncovid{
+.seccion_covid{
 	background: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 	background-color: white;
 	overflow: hidden;
 	padding: 100px;
 }
-.contenedorcovid{
+.contenedor_covid{
 	width: 55%;
 	float: right;
 	background-color: white;
@@ -224,11 +224,11 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	border-radius: 10px;
 	box-shadow: 1px 1px 20px rgb(117, 224, 117);
 }
-.contenedorcovid h2{
+.contenedor_covid h2{
 	margin-bottom: 30px;
 	font-size: 30px;
 }
-.textocovid {
+.texto_covid {
 	font-size: 14px;
 	color: black;
 	line-height: 20px;
@@ -237,35 +237,35 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 }
 
 @media screen and (max-width: 1200px) {
-    .contenedorcovid{
+    .contenedor_covid{
     padding: 80px;
     }
 }
 @media  screen and (max-width: 1000px) {
-    .seccioncovid{
+    .seccion_covid{
 		background-size: 100%;
 		padding: 100px 40px;
 	}
-	.contenedorcovid{
+	.contenedor_covid{
 		width: 100%;
 	}
 }
 @media  screen and (max-width: 600px) {
-	.seccioncovid{
+	.seccion_covid{
 		padding: 100px 40px;
 	}
-	.contenedorcovid{
+	.contenedor_covid{
 		width: 100%;
 	}
 }
-.seccioncoviddos{
+.seccion_covid_dos{
 	background: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 	background-color: white;
 	overflow: hidden;
 	padding: 100px;
 }
-.contenedorcoviddos{
+.contenedor_covid_dos{
 	width: 55%;
 	float: left;
 	background-color: white;
@@ -273,15 +273,15 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	border-radius: 10px;
 	box-shadow: 1px 1px 20px white;
 }
-.contenedorcoviddos h2{
+.contenedor_covid_dos h2{
 	margin-bottom: 30px;
 	font-size: 30px;
 }
-.contenedorcoviddos h3{
+.contenedor_covid_dos h3{
 	margin-bottom: 30px;
 	font-size: 20px;
 }
-.textocoviddos {
+.texto_covid_dos {
 	font-size: 14px;
 	color: black;
 	line-height: 20px;
@@ -289,35 +289,35 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	margin-bottom: 40px;
 }
 @media screen and (max-width: 1200px) {
-    .contenedorcoviddos{
+    .contenedor_covid_dos{
     padding: 80px;
     }
 }
 @media  screen and (max-width: 1000px) {
-    .seccioncoviddos{
+    .seccion_covid_dos{
 		background-size: 100%;
 		padding: 100px 40px;
 	}
-	.contenedorcoviddos{
+	.contenedor_covid_dos{
 		width: 100%;
 	}
 }
 @media  screen and (max-width: 600px) {
-	.seccioncoviddos{
+	.seccion_covid_dos{
 		padding: 100px 40px;
 	}
-	.contenedorcoviddos{
+	.contenedor_covid_dos{
 		width: 100%;
 	}
 }
-.seccioncovidtres{
+.seccion_covid_tres{
 	background: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 	background-color: white;
 	overflow: hidden;
 	padding: 100px;
 }
-.contenedorcovidtres{
+.contenedor_covid_tres{
 	width: 55%;
 	float: right;
 	background-color: white;
@@ -325,11 +325,11 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	border-radius: 10px;
 	box-shadow: 1px 1px 20px rgb(117, 224, 117);
 }
-.contenedorcovidtres h2{
+.contenedor_covid_tres h2{
 	margin-bottom: 30px;
 	font-size: 30px;
 }
-.textocovidtres {
+.texto_covid_tres {
 	font-size: 14px;
 	color: black;
 	line-height: 20px;
@@ -337,35 +337,35 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	margin-bottom: 40px;
 }
 @media screen and (max-width: 1200px) {
-    .contenedorcovidtres{
+    .contenedor_covid_tres{
     padding: 80px;
     }
 }
 @media  screen and (max-width: 1000px) {
-    .seccioncovidtres{
+    .seccion_covid_tres{
 		background-size: 100%;
 		padding: 100px 40px;
 	}
-	.contenedorcovidtres{
+	.contenedor_covid_tres{
 		width: 100%;
 	}
 }
 @media  screen and (max-width: 600px) {
-	.seccioncovidtres{
+	.seccion_covid_tres{
 		padding: 100px 40px;
 	}
-	.contenedorcovidtres{
+	.contenedor_covid_tres{
 		width: 100%;
 	}
 }
-.seccioncovidcuatro{
+.seccion_covid_cuatro{
 	background: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 	background-color: white;
 	overflow: hidden;
 	padding: 100px;
 }
-.contenedorcovidcuatro{
+.contenedor_covid_cuatro{
 	width: 55%;
 	float: left;
 	background-color: white;
@@ -373,11 +373,11 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	border-radius: 10px;
 	box-shadow: 1px 1px 20px white;
 }
-.contenedorcovidcuatro h2{
+.contenedor_covid_cuatro h2{
 	margin-bottom: 30px;
 	font-size: 30px;
 }
-.textocovidcuatro {
+.texto_covid_cuatro {
 	font-size: 14px;
 	color: black;
 	line-height: 20px;
@@ -386,24 +386,32 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 }
 
 @media screen and (max-width: 1200px) {
-    .contenedorcovidcuatro{
+    .contenedor_covid_cuatro{
     padding: 80px;
     }
 }
 @media  screen and (max-width: 1000px) {
-    .seccioncovidcuatro{
+    .seccion_covid_cuatro{
 		background-size: 100%;
 		padding: 100px 40px;
 	}
-	.contenedorcovidcuatro{
+	.contenedor_covid_cuatro{
 		width: 100%;
 	}
 }
 @media  screen and (max-width: 600px) {
-	.seccioncovidcuatro{
+	.seccion_covid_cuatro{
 		padding: 100px 40px;
 	}
-	.contenedorcovidcuatro{
+	.contenedor_covid_cuatro{
 		width: 100%;
 	}
+}
+.centrar_al_final{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.credit{
+	text-align: center;
+	color: rgb(117, 224, 117);
 }
