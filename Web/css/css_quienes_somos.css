@@ -10,25 +10,25 @@ html{
 body {
 	background-color: white /* Cambiar el color de fondo del body */
 }
-header {
+header { /* se refiere al contenido del header , es decir al menu de navegacion */
 	width: 100%;
 	overflow: hidden;
 	background-color: black;
 	border: rgb(117, 224, 117) 1px solid;
 }
-.centrar {
+.centrar { /* Centra todo lo que lleve esta clase */
 	width: auto;
 	max-width: 1000px;
 	margin: auto;
 	overflow: hidden;
 }
-header .imagen_logo {
+header .imagen_logo { /* imagen del logo en el header*/
 	line-height: 10px;
 	float: left;
 	padding-top: 5px;
 	padding-bottom: 6px;
 }
-header .imagen_logo_ufo{
+header .imagen_logo_ufo{ /* imagen del logo / texto */
 	float: left;
 	line-height: 0px;
 }
@@ -42,7 +42,7 @@ img.logo_ufo{
 	padding-top: 25px;
 	line-height: 10px;
 }
-header nav {
+header nav { /* estilo al menu de navegacion */
 	float: right;
 	line-height: 10px;
 	padding-top: 17px;
@@ -65,14 +65,310 @@ header nav a:hover {
 }
 a { /* Para los links alpicar lo siguiente*/
     color:rgb(66, 64, 64);   /* Cambiar el color */
-} 
+}
+/* aqui empieza el css de quienes somos */
+
+.primera_linea{ /* aplica estilo al primer parrafo de la pagina */
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
+
+}
+.imagene_spacio{ /* le da el fondo a la pagina*/
+	height: 1200px;
+	width: 100%;
+	position: relative;
+	display: block;
+}
+.borde_conocenos{ /* estilo del borde de conocenos */
+	box-sizing: content-box;
+	width: 250px;
+	min-width: 250px;
+	max-width: 250px;
+}
+.texto_conocenos{ /* estilo texto */
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+	color:  black;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	font-size: 25px;
+	left: 60px;
+	top: 10px;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	
+}
+.borde_conocenos_dos{
+	box-sizing: content-box;
+	width: 630px;
+	min-width: 630px;
+	max-width:  630px;
+}
+.texto_conocenos_dos{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+	color:  black;
+	margin-top: 35px;
+	font-size: 18px;
+	left: 150px;
+}
+.borde_conocenos_tres{
+	box-sizing: content-box;
+	width: 740px;
+	min-width: 710px;
+	max-width: 740px;
+}
+.texto_conocenostres{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 1px 1px 10px white;
+	color:  black;
+	margin-top: 20px;
+	font-size: 15px;
+	left: 200px;
+}
+.borde_conocenos_cuatro{
+	box-sizing: content-box;
+	width: 190px;
+	min-width: 190px ;
+	max-width: 190px;
+}
+.texto_conocenos_cuatro{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+	color:  black;
+	margin-top: 60px;
+	font-size: 18px;
+	left: 700px;
+}
+.borde_conocenos_cinco{
+	box-sizing: content-box;
+	width: 600px;
+	min-width: 570px;
+	max-width: 600px ;
+}
+.texto_conocenos_cinco{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 1px 1px 10px white;
+	color:  black;
+	margin-top: 20px;
+	font-size: 15px;
+	left: 760px;
+}
+.borde_conocenos_seis{
+	box-sizing: content-box;
+	width: 255px;
+	min-width: 255px;
+	max-width: 255px ;
+}
+.texto_conocenos_seis{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+	color:  black;
+	margin-top: 40px;
+	font-size: 18px;
+	left: 400px;
+}
+.borde_conocenos_siete{
+	box-sizing: content-box;
+	width: 600px;
+	min-width: 570px;
+	max-width: 600px;
+}
+.texto_conocenos_siete{
+	position: relative;
+	background-color: white;
+	padding: 20px;
+    border-radius: 20px;
+	box-shadow: 1px 1px 10px white;
+	color:  black;
+	margin-top: 20px;
+	font-size: 15px;
+	left: 460px;
+}
+/* aqui empieza el css de la empresa */
+
+.empresa{ /* estilo de la seccion de la empresa */
+	background-image: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+}
+.contenedor_titulo_empresa{/* estilo del fondo de la empresa*/
+	box-sizing: content-box;
+	width: 390px;
+	min-width: 390px;
+	max-width: 390px;
+}
+.titulo_empresa{ /* estilo del texto de empresa */
+	position: relative;
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+	color:  black;
+	font-size: 25px;
+	padding-top: 20px;
+	left: 540px;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	border-radius: 30px;
+}
+.contenedor_imagenes{ /* estilo de imagenes de la empresa */
+	overflow: hidden;
+	padding-bottom: 150px;
+	background-image: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+}
+.carta{ /* fondo d lo que envuelve la empresa y la imagen */
+	box-shadow:0 1px 1px white,0 1px 10px 0 white;
+	position: relative;
+	margin: 1em;
+	float: left;
+	left: 400px;
+	background-color: white;
+}
+.margen{ /* deja margen ala classe margen */
+	margin:16px;
+	width: 20%;
+}
+.tamaño_imagen_empresa{
+	width: 100%;
+}
+
+.contenedor_empresa{
+	padding:0.01em 16px;
+}
+
+/* aqui empieza el css de las valoraciones */
+
+.opiniones{ /* estilo de la seccion opiniones  */
+    margin: 0;
+	padding: 30px;
+	padding-bottom: 200px;
+    height: 100%;
+    place-items: center;
+	background-image: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+}
+.contenedor_titulo_opiniones{ /* fondo del titulo */
+	box-sizing: content-box;
+	width: 390px;
+	min-width: 360px;
+	max-width: 390px;
+	padding: 30px;
+}
+.titulo_opiniones{ /* estilo del titulo de las opiniones */
+	position: relative;
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+	color:  black;
+	font-size: 25px;
+	padding-top: 20px;
+	left: 490px;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	border-radius: 30px;
+}
+.envoltorio{ /* estilo de los bloques de las valoraciones */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.envoltorio .cajas{ /* estilo de las cajas dentro de el envoltorio */
+    background: white;
+    width: calc(30% - 20px);
+    padding: 25px;
+    border-radius: 25px;
+	box-shadow: 1px 1px 13px rgb(117, 224, 117);
+}
+.envoltorio .cajas i.quote{
+    font-size: 15px;
+    color: black;
+}
+.envoltorio .cajas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.cajas p{
+    font-size: 15px;
+}
+.cajas .informacion .name{
+    font-weight: 600;
+    font-size: 17px;
+}
+.cajas .informacion .job{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.cajas .informacion .stars{
+    margin-top: 2px;
+}
+.cajas .informacion .stars i{
+    color:  rgb(117, 224, 117);
+}
+.cajas .cajas .imagenes_clientes{
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: black;
+    border-radius: 50%;
+}
+.cajas .imagenes_clientes img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid  black;
+}
+.cajas:hover .contenido .imagenes_clientes img{
+    border-color: rgb(117, 224, 117);
+}
+
+@media (max-width: 1045px) { /* redimensiona la pagina dependiendo del tamaño maximo del dispositivo */
+    .envoltorio .cajas{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+    }
+}
+@media (max-width: 702px) {
+    .envoltorio .cajas{
+    width: 100%;
+    }
+}
 footer { /* Para el pie de página aplicar lo siguiente*/
 	position: absolute;
 	width: 100%;
 	background-color: black;
 	border:  rgb(117, 224, 117) 1px solid;
 }
-.main-content{
+.main-content{ /* estilo del contenido del footer */
 	display: flex;
 }
 .main-content .box{
@@ -206,312 +502,11 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 .bottom center a:hover{
 	text-decoration: underline;
 }
-
-/* aqui empieza el css de quienes somos */
-
-.primera_linea{
-	background-image: url(../imagenes/espacio.jpg);
-	padding-bottom: 150px;
-	background-size: 50%;
-
-}
-.imagene_spacio{
-	height: 1200px;
-	width: 100%;
-	position: relative;
-	display: block;
-}
-.borde_conocenos{
-	box-sizing: content-box;
-	width: 250px;
-	min-width: 250px;
-	max-width: 250px;
-}
-.texto_conocenos{
-	position: relative;
-	background-color: white;
-	padding: 20px;
-    border-radius: 20px;
-	box-shadow: 1px 1px 20px rgb(117, 224, 117);
-	color:  black;
-	margin-top: 10px;
-	margin-bottom: 50px;
-	font-size: 25px;
-	left: 60px;
-	top: 10px;
-	text-decoration-line: underline;
-	text-decoration-style: solid;
-	
-}
-.borde_conocenos_dos{
-	box-sizing: content-box;
-	width: 630px;
-	min-width: 630px;
-	max-width:  630px;
-}
-.texto_conocenos_dos{
-	position: relative;
-	background-color: white;
-	padding: 20px;
-    border-radius: 20px;
-	box-shadow: 1px 1px 20px rgb(117, 224, 117);
-	color:  black;
-	margin-top: 35px;
-	font-size: 18px;
-	left: 150px;
-}
-.borde_conocenos_tres{
-	box-sizing: content-box;
-	width: 740px;
-	min-width: 710px;
-	max-width: 740px;
-}
-.texto_conocenostres{
-	position: relative;
-	background-color: white;
-	padding: 20px;
-    border-radius: 20px;
-	box-shadow: 1px 1px 10px white;
-	color:  black;
-	margin-top: 20px;
-	font-size: 15px;
-	left: 200px;
-}
-.borde_conocenos_cuatro{
-	box-sizing: content-box;
-	width: 190px;
-	min-width: 190px ;
-	max-width: 190px;
-}
-.texto_conocenos_cuatro{
-	position: relative;
-	background-color: white;
-	padding: 20px;
-    border-radius: 20px;
-	box-shadow: 1px 1px 20px rgb(117, 224, 117);
-	color:  black;
-	margin-top: 60px;
-	font-size: 18px;
-	left: 700px;
-}
-.borde_conocenos_cinco{
-	box-sizing: content-box;
-	width: 600px;
-	min-width: 570px;
-	max-width: 600px ;
-}
-.texto_conocenos_cinco{
-	position: relative;
-	background-color: white;
-	padding: 20px;
-    border-radius: 20px;
-	box-shadow: 1px 1px 10px white;
-	color:  black;
-	margin-top: 20px;
-	font-size: 15px;
-	left: 760px;
-}
-.borde_conocenos_seis{
-	box-sizing: content-box;
-	width: 255px;
-	min-width: 255px;
-	max-width: 255px ;
-}
-.texto_conocenos_seis{
-	position: relative;
-	background-color: white;
-	padding: 20px;
-    border-radius: 20px;
-	box-shadow: 1px 1px 20px rgb(117, 224, 117);
-	color:  black;
-	margin-top: 40px;
-	font-size: 18px;
-	left: 400px;
-}
-.borde_conocenos_siete{
-	box-sizing: content-box;
-	width: 600px;
-	min-width: 570px;
-	max-width: 600px;
-}
-.texto_conocenos_siete{
-	position: relative;
-	background-color: white;
-	padding: 20px;
-    border-radius: 20px;
-	box-shadow: 1px 1px 10px white;
-	color:  black;
-	margin-top: 20px;
-	font-size: 15px;
-	left: 460px;
-}
-/* aqui empieza el css de la empresa */
-
-.empresa{
-	background-image: url(../imagenes/espacio.jpg);
-	background-size: 50%;
-}
-.contenedor_titulo_empresa{
-	box-sizing: content-box;
-	width: 390px;
-	min-width: 390px;
-	max-width: 390px;
-}
-.titulo_empresa{
-	position: relative;
-	text-align: center;
-	background-color: white;
-	padding: 20px;
-	box-shadow: 1px 1px 20px rgb(117, 224, 117);
-	color:  black;
-	font-size: 25px;
-	padding-top: 20px;
-	left: 540px;
-	text-decoration: underline;
-	text-decoration-style: solid;
-	border-radius: 30px;
-}
-.contenedor_imagenes{
-	overflow: hidden;
-	padding-bottom: 150px;
-	background-image: url(../imagenes/espacio.jpg);
-	background-size: 50%;
-}
-.carta{
-	box-shadow:0 1px 1px white,0 1px 10px 0 white;
-	position: relative;
-	margin: 1em;
-	float: left;
-	left: 400px;
-	background-color: white;
-}
-.margen{
-	margin:16px;
-	width: 20%;
-}
-.tamaño_imagen_empresa{
-	width: 100%;
-}
-
-.contenedor_empresa{
-	padding:0.01em 16px;
-}
-
-
-
-
-
-/* aqui empieza el css de las valoraciones */
-
-.opiniones{
-    margin: 0;
-	padding: 30px;
-	padding-bottom: 200px;
-    height: 100%;
-    place-items: center;
-	background-image: url(../imagenes/espacio.jpg);
-	background-size: 50%;
-}
-.contenedor_titulo_opiniones{
-	box-sizing: content-box;
-	width: 390px;
-	min-width: 360px;
-	max-width: 390px;
-	padding: 30px;
-}
-.titulo_opiniones{
-	position: relative;
-	text-align: center;
-	background-color: white;
-	padding: 20px;
-	box-shadow: 1px 1px 20px rgb(117, 224, 117);
-	color:  black;
-	font-size: 25px;
-	padding-top: 20px;
-	left: 490px;
-	text-decoration: underline;
-	text-decoration-style: solid;
-	border-radius: 30px;
-}
-.envoltorio{
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.envoltorio .cajas{
-    background: white;
-    width: calc(30% - 20px);
-    padding: 25px;
-    border-radius: 25px;
-	box-shadow: 1px 1px 13px rgb(117, 224, 117);
-}
-.envoltorio .cajas i.quote{
-    font-size: 15px;
-    color: black;
-}
-.envoltorio .cajas{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-}
-.cajas p{
-    font-size: 15px;
-}
-.cajas .informacion .name{
-    font-weight: 600;
-    font-size: 17px;
-}
-.cajas .informacion .job{
-    font-size: 15px;
-    font-weight: 500;
-    color: black;
-}
-.cajas .informacion .stars{
-    margin-top: 2px;
-}
-.cajas .informacion .stars i{
-    color:  rgb(117, 224, 117);
-}
-.cajas .cajas .imagenes_clientes{
-    height: 75px;
-    width: 75px;
-    padding: 3px;
-    background: black;
-    border-radius: 50%;
-}
-.cajas .imagenes_clientes img{
-    height: 70px;
-    width: 70px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid  black;
-}
-.cajas:hover .contenido .imagenes_clientes img{
-    border-color: rgb(117, 224, 117);
-}
-
-@media (max-width: 1045px) {
-    .envoltorio .cajas{
-    width: calc(50% - 10px);
-    margin: 10px 0;
-    }
-}
-@media (max-width: 702px) {
-    .envoltorio .cajas{
-    width: 100%;
-    }
-}
-.centrar_al_final{
+.centrar_al_final{ /* centra el texto del final de la pagina */
 	text-align: center;
 	padding-bottom: 10px;
 }
 .credit{
-	text-align: center;
+	text-align: center; /* estilo del texto del fondo de la pagina */
 	color: rgb(117, 224, 117);
 }

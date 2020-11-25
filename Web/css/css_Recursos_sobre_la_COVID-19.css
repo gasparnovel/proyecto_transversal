@@ -10,11 +10,11 @@ html{
 body {
 	background-color: white /* Cambiar el color de fondo del body */
 }
-header {
+header { /* hace referencia al header y compone tota la parte del menu de navegacion con el logo etc */
 	width: 100%;
 	overflow: hidden;
 	background-color: black;
-	border: rgb(117, 224, 117) 1px solid;
+	border: rgb(117, 224, 117) 1px solid;  
 }
 .centrar {
 	width: auto;
@@ -66,157 +66,16 @@ header nav a:hover {
 a { /* Para los links alpicar lo siguiente*/
     color:rgb(66, 64, 64);   /* Cambiar el color */
 } 
-footer { /* Para el pie de página aplicar lo siguiente*/
-	position: absolute;
-	width: 100%;
-	background-color: black;
-	border:  rgb(117, 224, 117) 1px solid;
-}
-.main-content{
-	display: flex;
-}
-.main-content .box{
-	flex-basis: 50%;
-	padding: 10px 20px;
-}
-.box h2{
-	font-size: 1.125rem;
-	color: white;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-.box .content{
-	margin: 20px 0 0 0;
-	position: relative;
-}
-.box .content:before{
-	position: absolute;
-	content: '';
-	top: -10px;
-	height: 2px;
-	width: 100%;
-	background: rgb(117, 224, 117);
-}
-.box .content:after{
-	position: absolute;
-	content: '';
-	height: 2px;
-	width: 15%;
-	background: rgb(117, 224, 117);
-	top: -10px;
-}
-.left .content p{
-	text-align: justify;
-	color: white;
-}
-.left .content .social{
-	margin: 20px 0 0 0;
-}
-.left .content .social a{
-	padding: 0 2px;
-}
-.left .content .social a span{
-	height: 40px;
-	width: 40px;
-	background: white;
-	line-height: 40px;
-	text-align: center;
-	font-size: 18px;
-	border-radius: 12px;
-	transition: 0.3s;
-	color: black;
-}
-.left .content .social a span:hover{
-	background: rgb(117, 224, 117);
-}
-.center .content .fas{
-	font-size: 1.4375rem;
-	background: white;
-	height: 45px;
-	width: 45px;
-	line-height: 45px;
-	text-align: center;
-	border-radius: 50%;
-	transition: 0.3s;
-	cursor: pointer;
-}
-.center .content .fas:hover{
-	background: rgb(117, 224, 117);
-}
-.center .content .text{
-	font-size: 1.0625rem;
-	font-weight: 500;
-	padding-left: 10px;
-	color: white;
-}
-.center .content .phone{
-	margin: 15px 0;
-}
-.right form .text{
-	font-size: 1.0625rem;
-	margin-bottom: 2px;
-	color: white;
-}
-.right form .msg{
-	margin-top: 10px;
-}
-.right form input, .right form textarea{
-	width: 100%;
-	font-size: 1.0625rem;
-	background: white;
-	padding-left: 10px;
-	border: 1px solid black;
-}
-.right form input:focus,
-.right form textarea:focus{
-	outline-color: rgb(117, 224, 117);
-}
-.right form input{
-	height: 35px;
-}
-.right form .btn{
-	margin-top: 10px;
-}
-.right form .btn button{
-	height: 40px;
-	width: 100%;
-	border: none;
-	outline: none;
-	background: white;
-	font-size: 1.0625rem;
-	font-weight: 500;
-	cursor: pointer;
-	transition: .3s;
-}
-.right form .btn button:hover{
-	background:rgb(117, 224, 117);
-}
-.bottom center{
-	padding: 5px;
-	font-size: 0.9375rem;
-	background: black;
-}
-.bottom center span{
-	color: white;
-}
-.bottom center a{
-	color: rgb(117, 224, 117);
-	text-decoration: none;
-}
-.bottom center a:hover{
-	text-decoration: underline;
-}
-
 /* Aqui empieza el css de recursos sobre la covid*/
 
-.seccion_covid{
+.seccion_covid{ /* define el estilo de la seccion */
 	background: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 	background-color: white;
 	overflow: hidden;
 	padding: 100px;
 }
-.contenedor_covid{
+.contenedor_covid{ /* hace referencia al fondo del texto */
 	width: 55%;
 	float: right;
 	background-color: white;
@@ -228,7 +87,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	margin-bottom: 30px;
 	font-size: 30px;
 }
-.texto_covid {
+.texto_covid { /* hace rerferencia al estilo del texto */
 	font-size: 14px;
 	color: black;
 	line-height: 20px;
@@ -236,7 +95,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) { /*adapta la pagina a diferentes dispositivos a raiz del max-width*/
     .contenedor_covid{
     padding: 80px;
     }
@@ -407,11 +266,151 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 		width: 100%;
 	}
 }
-.centrar_al_final{
+footer { /* Para el pie de página aplicar lo siguiente*/
+	position: absolute;
+	width: 100%;
+	background-color: black;
+	border:  rgb(117, 224, 117) 1px solid;
+}
+.main-content{ /* hace referencia al contenido del footer*/
+	display: flex;
+}
+.main-content .box{ /* referencia al contenigo y a la caja del footer */
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box h2{ /* al h2 de la caja le cambia el estilo */
+	font-size: 1.125rem;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.box .content{
+	margin: 20px 0 0 0;
+	position: relative;
+}
+.box .content:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 2px;
+	width: 100%;
+	background: rgb(117, 224, 117);
+}
+.box .content:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	background: rgb(117, 224, 117);
+	top: -10px;
+}
+.left .content p{
+	text-align: justify;
+	color: white;
+}
+.left .content .social{
+	margin: 20px 0 0 0;
+}
+.left .content .social a{
+	padding: 0 2px;
+}
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 12px;
+	transition: 0.3s;
+	color: black;
+}
+.left .content .social a span:hover{ /* le da estilo al fondo del span */
+	background: rgb(117, 224, 117);
+}
+.center .content .fas{
+	font-size: 1.4375rem;
+	background: white;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.center .content .fas:hover{
+	background: rgb(117, 224, 117);
+}
+.center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	padding-left: 10px;
+	color: white;
+}
+.center .content .phone{
+	margin: 15px 0;
+}
+.right form .text{
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	color: white;
+}
+.right form .msg{
+	margin-top: 10px;
+}
+.right form input, .right form textarea{
+	width: 100%;
+	font-size: 1.0625rem;
+	background: white;
+	padding-left: 10px;
+	border: 1px solid black;
+}
+.right form input:focus,
+.right form textarea:focus{
+	outline-color: rgb(117, 224, 117);
+}
+.right form input{
+	height: 35px;
+}
+.right form .btn{
+	margin-top: 10px;
+}
+.right form .btn button{
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: white;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+}
+.right form .btn button:hover{
+	background:rgb(117, 224, 117);
+}
+.bottom center{
+	padding: 5px;
+	font-size: 0.9375rem;
+	background: black;
+}
+.bottom center span{
+	color: white;
+}
+.bottom center a{
+	color: rgb(117, 224, 117);
+	text-decoration: none;
+}
+.bottom center a:hover{
+	text-decoration: underline;
+}
+.centrar_al_final{ /* centra el estilo del final de la pagina donde se encuentrea el titulo GO-GO UFO*/
 	text-align: center;
 	padding-bottom: 10px;
 }
-.credit{
+.credit{ /* le da color al texto antes mencionado*/
 	text-align: center;
 	color: rgb(117, 224, 117);
 }
