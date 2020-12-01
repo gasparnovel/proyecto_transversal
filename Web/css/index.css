@@ -1,0 +1,616 @@
+*{ 
+	margin: 0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif; /* Cambiar la fuente de todo el documento*/
+	box-sizing: border-box;
+}
+html{
+	overflow-x:hidden;
+}
+body {
+	background-color: white;
+}
+header {
+	width: 100%;
+	overflow: hidden;
+	background-color: black;
+	border: rgb(117, 224, 117) 1px solid;
+}
+.centrar {
+	width: auto;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+header .imagen_logo {
+	line-height: 10px;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 6px;
+}
+header .imagen_logo_ufo{
+	float: left;
+	line-height: 0px;
+}
+img.logo{
+	width: 60px;
+	height: 60px;
+}
+img.logo_ufo{
+	width: 120px;
+	height: auto;
+	padding-top: 25px;
+	line-height: 10px;
+}
+header nav {
+	float: right;
+	line-height: 10px;
+	padding-top: 17px;
+}
+header nav a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 14px;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition:all 500ms ease;
+
+}
+header nav a:hover {
+	background-color: rgb(117, 224, 117);
+	border-radius: 50px;
+}
+a { /* Para los links alpicar lo siguiente*/
+    color:rgb(66, 64, 64);   /* Cambiar el color */
+} 
+
+/* aqui empieza el css de incio de sesion y elegir ruta*/
+.botones{
+	margin-left: auto;
+	margin-bottom: 50px;
+	padding: 0 40px;
+	display: inline-flex; 
+	align-items: center;
+	justify-content: space-between;
+}
+div .show-btn{
+	position: relative;
+	background-color:rgb(117, 224, 117, 0.7);
+	padding: 10px 20px;
+	font-size: 25px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+}
+.destinos, .show-btn, .area_login{
+	position: relative;
+	margin-left: auto;
+	display: inline;
+}
+.destinos{
+	position: relative;
+	top: -50%;
+	left: 7%;
+}
+input[type="checkbox"]{
+	display: none;
+}
+.show-btn:hover{
+	text-decoration: underline;
+	color: blanchedalmond;
+}
+.area_login, .arearuta{
+	position: relative;
+	display: none;
+	height: 450px;
+	width: 410px;
+	padding: 30px;
+	background-color:rgb(117, 224, 117, 0.7) ;
+	box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+}
+#show:checked ~ .show-btn{
+	display: none;
+}
+#show:checked ~ .area_login{
+	display: block;
+}
+#show-dest:checked ~ .show-btn{
+	display: none;
+}
+#show-dest:checked ~ .arearuta{
+	display: block;
+	margin: auto;
+}
+.area_login  .close-btn{
+	position: absolute;
+	cursor: pointer;
+	font-size: 18px;
+}
+.arearuta  .close-btn{
+	position: absolute;
+	cursor: pointer;
+	font-size: 18px;
+}
+.area_login .close-btn:hover{
+	color: blanchedalmond;
+}
+.arearuta .close-btn:hover{
+	color: blanchedalmond;
+}
+.area_login .text{
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+.arearuta .text{
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+}
+.area_login form .data_login{
+	height: 45px;
+	width: 100%;
+	margin: 40px 0;
+}
+form > label{
+	font-size: 18px;
+}
+.arearuta form .data_login{
+	height: 45px;
+	width: 100%;
+	margin: 40px 0;
+}
+form .data_login input{
+	height: 100%;
+	width: 100%;
+	padding-left: 10px;
+	font-size: 17px;
+	border: 1px solid lightgray;
+}
+.data_login_select{
+	height: 45px;
+	width: 100%;
+	font-size: 16px;
+}
+.data_login_select > option{
+	font-size: 16px;
+}
+form ~ input:focus{
+	outline-color: rgb(117, 224, 117);
+}
+form .btn_login{
+	margin:  30px 0;
+	height: 45px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+form .btn_login .inner{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	z-index: -1;
+	background-color:white ;
+}
+form ~ a{
+	font-weight: 500;
+	color: black;
+	text-decoration: none;  
+}
+form ~ a:hover{
+	text-decoration: underline;
+	color: blanchedalmond;
+}
+form .btn_login  button{
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+footer { /* Para el pie de página aplicar lo siguiente*/
+	position: absolute;
+	width: 100%;
+	background-color: black;
+	border:  rgb(117, 224, 117) 1px solid;
+}
+.main-content{
+	display: flex;
+}
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box h2{
+	font-size: 1.125rem;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.box .content{
+	margin: 20px 0 0 0;
+	position: relative;
+}
+.box .content:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 2px;
+	width: 100%;
+	background: rgb(117, 224, 117);
+}
+.box .content:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	background: rgb(117, 224, 117);
+	top: -10px;
+}
+.content > p{
+	text-align: justify;
+	color: white;
+}
+.left .content .social{
+	margin: 20px 0 0 0;
+}
+.left .content .social a{
+	padding: 0 2px;
+}
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 12px;
+	transition: 0.3s;
+	color: black;
+}
+.left .content .social a span:hover{
+	background: rgb(117, 224, 117);
+}
+.center .content .fas{
+	font-size: 1.4375rem;
+	background: white;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.center .content .fas:hover{
+	background: rgb(117, 224, 117);
+}
+.center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	padding-left: 10px;
+	color: white;
+}
+.center .content .phone{
+	margin: 15px 0;
+}
+.right form .text{
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	color: white;
+}
+.right form .msg{
+	margin-top: 10px;
+}
+.right form input, .right form textarea{
+	width: 100%;
+	font-size: 1.0625rem;
+	background: white;
+	padding-left: 10px;
+	border: 1px solid black;
+}
+.right form input:focus,
+.right form textarea:focus{
+	outline-color: rgb(117, 224, 117);
+}
+.right form input{
+	height: 35px;
+}
+.right form .btn{
+	margin-top: 10px;
+}
+.right form .btn button{
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: white;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+}
+.right form .btn button:hover{
+	background:rgb(117, 224, 117);
+}
+.bottom center{
+	padding: 5px;
+	font-size: 0.9375rem;
+	background: black;
+}
+.bottom center span{
+	color: white;
+}
+.bottom center a{
+	color: rgb(117, 224, 117);
+	text-decoration: none;
+}
+.bottom center a:hover{
+	text-decoration: underline;
+}
+
+/* aqui empieza el css de inicio */
+
+.seccion_inicio{
+	background: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+	background-color: white;
+	overflow: hidden;
+	padding-top: 140px;
+	padding-bottom: 30px;
+}
+.contenedor_inicio{
+	position: relative;
+	left: 24%;
+	width: 55%;
+	background-color: white;
+	padding: 15px;
+	border-radius: 30px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+}
+.contenedor_inicio h2{
+	margin-bottom: 30px;
+	margin-top: 30px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: underline;
+}
+.contenedor_inicio h4{
+	margin-bottom: 30px;
+	margin-top: 30px;
+	font-size: 20px;
+	
+}
+.texto_inicio_centrado {
+	font-size: 14px;
+	color: black;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.texto_inicio {
+	font-size: 14px;
+	color: black;
+	line-height: 20px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor_inicio{
+    padding: 80px;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .seccion_inicio{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.contenedor_inicio{
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 600px) {
+	.seccion_inicio{
+		padding: 100px 40px;
+	}
+	.contenedor_inicio{
+		width: 100%;
+	}
+}
+.seccion_inicio_dos{
+	background: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+	background-color: white;
+	overflow: hidden;
+	padding-top: 70px;
+	padding-bottom: 170px;
+}
+.contenedor_inicio_dos{
+	position: relative;
+	left: 24%;
+	width: 55%;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+}
+.texto_inicio_dos {
+	font-size: 14px;
+	color: black;
+	line-height: 20px;
+	text-align: justify;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor_inicio_dos{
+    padding: 80px;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .seccion_inicio_dos{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.contenedor_inicio_dos{
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 600px) {
+	.seccion_inicio_dos{
+		padding: 100px 40px;
+	}
+	.contenedor_inicio_dos{
+		width: 100%;
+	}
+}
+.seccioninicioestrella{
+	background: url(../imagenes/espacio.jpg);
+	background-size: 50%;
+	background-color: white;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.contenedorinicioestrella{
+	position: relative;
+	left: 42%;
+	width: 17%;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 1px 1px 20px rgb(117, 224, 117);
+}
+.textoinicioestrella {
+	font-size: 30px;
+	color: black;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 5px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedorinicioestrella{
+    padding: 80px;
+    }
+}
+@media  screen and (max-width: 1000px) {
+    .seccioninicioestrella{
+		background-size: 100%;
+		padding: 100px 40px;
+	}
+	.contenedorinicioestrella{
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 600px) {
+	.seccioninicioestrella{
+		padding: 100px 40px;
+	}
+	.contenedorinicioestrella{
+		width: 100%;
+	}
+}
+/* aqui empieza el css de inicio login y naves */
+
+
+
+.fondo_contenedor_nave{
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
+	padding-top: 140px;
+}
+.contenedor_nave{
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.carta_nave{
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+transition: 0.6s;
+background-color:rgb(117, 224, 117, 0.7);
+box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+text-align: center;
+}
+.carta_nave:hover{
+height: auto;
+box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
+}
+.carta_nave .nave{
+padding: 25px;
+height: auto;
+width: 100%;
+}
+.carta_nave .nave img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.carta_nave .top-textnave{
+padding: 5px;
+
+}
+.carta_nave .top-textnave .name_nave{
+font-size: 25px;
+font-weight: 600;
+color: black;
+}
+.carta_nave .top-textnave p{
+font-size: 20px;
+font-weight: 600;
+color: black;
+line-height: 20px;
+}
+.carta_nave .bottom-textnave{
+padding: 0 20px 10px 20px;
+margin-top: 20px;
+opacity: 0;
+visibility: hidden;
+transition: 0.1s;
+}
+.carta_nave:hover .bottom-textnave{ /* para que salga el texto al pasar el ratón */
+opacity: 1;
+visibility: visible;
+}
+.carta_nave .bottom-textnave .description_nave{
+text-align: justify;
+font-weight: 500;
+}
+.carta_nave .bottom-textnave .btn_nave{
+margin-top: 10px;
+margin: 10px;
+text-align: left;
+}
+.carta_nave .bottom-textnave .btn_nave a{
+text-decoration: none;
+background-color: black;
+color: white;
+padding:  5px 8px;
+border-radius: 3px;
+display: inline-flex;
+transition: 0.2s;
+}
+.carta_nave .bottom-textnave .btn_nave a:hover{
+transform: scale(0.9);
+}
+.centraralfinal{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.credit{
+	text-align: center;
+	color: rgb(117, 224, 117);
+}

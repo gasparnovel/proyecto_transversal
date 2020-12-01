@@ -1,16 +1,20 @@
-* { 
+*{ 
 	margin: 0;
 	padding:0;
-    font-family:Arial /* Cambiar la fuente de todo el documento*/
+	font-family: Arial, Helvetica, sans-serif; /* Cambiar la fuente de todo el documento*/
+	box-sizing: border-box;
+}
+html{
+	overflow-x:hidden;
 }
 body {
-    background-color: white /* Cambiar el color de fondo del body */
+	background-color: white;
 }
 header {
 	width: 100%;
 	overflow: hidden;
 	background-color: black;
-	margin-bottom: 20px;
+	border: rgb(117, 224, 117) 1px solid;
 }
 .centrar {
 	width: auto;
@@ -18,13 +22,13 @@ header {
 	margin: auto;
 	overflow: hidden;
 }
-header .imagenlogo {
+header .imagen_logo {
 	line-height: 10px;
 	float: left;
 	padding-top: 5px;
 	padding-bottom: 6px;
 }
-header .imagenlogoufo{
+header .imagen_logo_ufo{
 	float: left;
 	line-height: 0px;
 }
@@ -32,7 +36,7 @@ img.logo{
 	width: 60px;
 	height: 60px;
 }
-img.logoufo{
+img.logo_ufo{
 	width: 120px;
 	height: auto;
 	padding-top: 25px;
@@ -62,11 +66,89 @@ header nav a:hover {
 a { /* Para los links alpicar lo siguiente*/
     color:rgb(66, 64, 64);   /* Cambiar el color */
 } 
+
+
+/* aqui empieza el css del catalogo*/
+
+.fondo_contenedor_nave{
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
+	padding-top: 140px;
+}
+.contenedor_nave{
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.carta_nave{
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+transition: 0.6s;
+background-color:rgb(117, 224, 117, 0.7);
+box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+text-align: center;
+}
+.carta_nave:hover{
+height: auto;
+box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
+}
+.carta_nave .nave{
+padding: 25px;
+height: auto;
+width: 100%;
+}
+.carta_nave .nave img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.carta_nave .top-textnave{
+padding: 5px;
+
+}
+.carta_nave .top-textnave .name_nave{
+font-size: 25px;
+font-weight: 600;
+color: black;
+}
+.carta_nave .top-textnave p{
+font-size: 20px;
+font-weight: 600;
+color: black;
+line-height: 20px;
+}
+.carta_nave .bottom-textnave{
+padding: 0 20px 10px 20px;
+margin-top: 20px;
+opacity: 0;
+visibility: hidden;
+transition: 0.1s;
+}
+.carta_nave:hover .bottom-textnave{
+opacity: 1;
+visibility: visible;
+}
+.carta_nave .bottom-textnave .descriptionnave{
+text-align: justify;
+font-weight: 500;
+}
+.lista_desordenada_nave{
+	text-align: left;
+	padding-left: 70px;
+}
+.lista_ordenada_nave{
+	padding-left: 30px;
+}
+
+
 footer { /* Para el pie de página aplicar lo siguiente*/
-	position: fixed;
-	bottom: 0px;
+	position: absolute;
 	width: 100%;
 	background-color: black;
+	border:  rgb(117, 224, 117) 1px solid;
 }
 .main-content{
 	display: flex;
