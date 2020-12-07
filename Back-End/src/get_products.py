@@ -1,7 +1,7 @@
 import urllib.request
 # from segunda_prueba import list_links
 lista_productos = []
-page = "file:///C:/Proyecto_transversal/proyecto_transversal/Web/html/Nuestros_Ufos.html"
+page = "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Nuestros_Ufos.html"
 
 
 def get_html_products(url):

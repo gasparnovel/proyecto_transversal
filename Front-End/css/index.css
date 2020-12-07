@@ -8,9 +8,9 @@ html{
 	overflow-x:hidden;
 }
 body {
-	background-color: white;
+	background-color: white; /* fondo de color blanco para todo el body*/
 }
-header {
+header { /* estilo del menu de navegacion a lo alto de la pagina*/
 	width: 100%;
 	overflow: hidden;
 	background-color: black;
@@ -32,11 +32,11 @@ header .imagen_logo_ufo{
 	float: left;
 	line-height: 0px;
 }
-img.logo{
+img.logo{ /* estilo de la imagen del logo*/
 	width: 60px;
 	height: 60px;
 }
-img.logo_ufo{
+img.logo_ufo{ /* estilo de la imagen texto del logo*/
 	width: 120px;
 	height: auto;
 	padding-top: 25px;
@@ -402,7 +402,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 	margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) { /* Cambia el tamaño de la pagina para diferentes dispositivos*/
     .contenedor_inicio{
     padding: 80px;
     }
@@ -471,7 +471,7 @@ footer { /* Para el pie de página aplicar lo siguiente*/
 		width: 100%;
 	}
 }
-.seccioninicioestrella{
+.seccioninicioestrella{ 
 	background: url(../imagenes/espacio.jpg);
 	background-size: 50%;
 	background-color: white;
@@ -606,11 +606,11 @@ transition: 0.2s;
 .carta_nave .bottom-textnave .btn_nave a:hover{
 transform: scale(0.9);
 }
-.centraralfinal{
+.centraralfinal{ /* centrar el texto alfinal de la pagina*/
 	text-align: center;
 	padding-bottom: 10px;
 }
-.credit{
+.credit{  /* estilo del texto alfinal de la pagina*/
 	text-align: center;
 	color: rgb(117, 224, 117);
 }
