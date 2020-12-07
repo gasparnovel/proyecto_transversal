@@ -44,5 +44,5 @@ def remove_html(page):
 # print(remove_space(lista_productos))
 # print(productos_sin_hmtl)
 # print(len(productos_sin_hmtl))
-# print(remove_html(
-    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
+print(remove_html(
+    "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
