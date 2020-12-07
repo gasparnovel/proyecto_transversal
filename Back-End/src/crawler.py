@@ -1,6 +1,8 @@
 import urllib.request
 list_links = []
 page = "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"
+keys = ['webpage', 'links']
+values = []
 
 
 def get_html(url):
@@ -41,9 +43,16 @@ def get_webpage(link):
     return webpage
 
 
+def crawler(page):
+    values = [get_webpage(page), get_all_links(page)]
+    total = dict(zip(keys, values))
+    return total
+
+
 # print(gethtml("file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
 # print(get_all_links(page))
-
+# print(dictionary(
+    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
 
 if __name__ == "__main__":
     assert get_webpage("hola/que") == "hola/"
