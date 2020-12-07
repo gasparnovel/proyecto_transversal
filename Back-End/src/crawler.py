@@ -1,6 +1,6 @@
 import urllib.request
 list_links = []
-page = "file:///C:/Proyecto_transversal/proyecto_transversal/Web/html/Inicio.html"
+page = "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"
 
 
 def get_html(url):
@@ -34,5 +34,5 @@ def get_next_target(page):
     url = page[start_quote + 1: end_quote]
     return url, end_quote
 
-    # print(gethtml("file:///C:/Proyecto_transversal/proyecto_transversal/Web/html/Inicio.html"))
+    # print(gethtml("file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
 print(get_all_links(page))
