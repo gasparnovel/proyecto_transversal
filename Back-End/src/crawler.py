@@ -34,5 +34,16 @@ def get_next_target(page):
     url = page[start_quote + 1: end_quote]
     return url, end_quote
 
-    # print(gethtml("file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
-print(get_all_links(page))
+
+def get_webpage(link):
+    final = link.rfind("/")
+    webpage = link[0:final + 1]
+    return webpage
+
+
+# print(gethtml("file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
+# print(get_all_links(page))
+
+
+if __name__ == "__main__":
+    assert get_webpage("hola/que") == "hola/"
