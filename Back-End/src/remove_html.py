@@ -1,11 +1,11 @@
 import urllib.request
-from get_products import lista_productos
+from get_products import get_all_products
 productos_sin_hmtl = []
 
 
 def remove_space(lista):
     lista_limpia = []
-    for item in lista_productos:
+    for item in lista:
         item = item.replace('\r', '')
         item = item.replace('\n', '')
         item = item.replace('  ', '')
@@ -14,7 +14,8 @@ def remove_space(lista):
     return lista_limpia
 
 
-def remove_html(lista):
+def remove_html(page):
+    lista = get_all_products(page)
     lista = remove_space(lista)
     tag = False
     quote = False
@@ -39,7 +40,9 @@ def remove_html(lista):
     return productos_sin_hmtl
 
 
-print(remove_html(lista_productos))
+# print(remove_html(lista_productos))
 # print(remove_space(lista_productos))
 # print(productos_sin_hmtl)
 # print(len(productos_sin_hmtl))
+# print(remove_html(
+    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))

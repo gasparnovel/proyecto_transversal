@@ -3,6 +3,7 @@ list_links = []
 page = "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"
 keys = ['webpage', 'links']
 values = []
+total = {}
 
 
 def get_html(url):
@@ -51,7 +52,7 @@ def crawler(page):
 
 # print(gethtml("file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
 # print(get_all_links(page))
-# print(dictionary(
+# print(crawler(
     # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
 
 if __name__ == "__main__":

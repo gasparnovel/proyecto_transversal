@@ -1,13 +1,22 @@
+from crawler import crawler
 import urllib.request
 # from segunda_prueba import list_links
 lista_productos = []
-page = "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Nuestros_Ufos.html"
+# page = "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Nuestros_Ufos.html"
 
 
-def get_html_products(url):
-    request = urllib.request.urlopen(url)
-    page = request.read().decode('utf-8')
-    return page
+def get_html_products(page):
+    total = crawler(page)
+    contador = 0
+    while contador < len(total['links']):
+        url = total['webpage'] + total['links'][contador]
+        request = urllib.request.urlopen(url)
+        page = request.read().decode('utf-8')
+        if page.find('class="producto"') == -1:
+            contador += 1
+        else:
+            contador = len(total['links'])
+            return page
 
 
 def get_all_products(page):
@@ -36,4 +45,6 @@ def get_next_product(page):
     return producto, end_quote
 
 
-print(get_all_products(page))
+# print(get_all_products(
+    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
+# print(total)
