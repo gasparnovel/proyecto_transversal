@@ -48,3 +48,4 @@ def remove_html(page):
 if __name__ == "__main__":
     assert remove_space(['  ']) == ['']
     assert remove_space(['\n']) == ['']
+    assert remove_space(['\r']) == ['']
