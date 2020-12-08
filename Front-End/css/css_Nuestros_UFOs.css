@@ -1,0 +1,294 @@
+*{ 
+	margin: 0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif; /* Cambiar la fuente de todo el documento*/
+	box-sizing: border-box;
+}
+html{
+	overflow-x:hidden; 
+}
+body {
+	background-color: white; /* estilo del fondo */
+}
+header { /* hace referencia al estilo del menu de navegacion*/
+	width: 100%;
+	overflow: hidden;
+	background-color: black;
+	border: rgb(117, 224, 117) 1px solid;
+}
+.centrar {
+	width: auto;
+	max-width: 1000px; /* Centrar el contenido para la clase centrar*/
+	margin: auto;
+	overflow: hidden;
+}
+header .imagen_logo {
+	line-height: 10px;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 6px;
+}
+header .imagen_logo_ufo{
+	float: left;
+	line-height: 0px;
+}
+img.logo{ /* estilo de la imagen del logo */
+	width: 60px;
+	height: 60px;
+}
+img.logo_ufo{ /* estilo de la imagen del logo de texto*/
+	width: 120px;
+	height: auto;
+	padding-top: 25px;
+	line-height: 10px;
+}
+header nav {
+	float: right;
+	line-height: 10px;
+	padding-top: 17px;
+}
+header nav a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 14px;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition:all 500ms ease;
+
+}
+header nav a:hover {
+	background-color: rgb(117, 224, 117);
+	border-radius: 50px;
+}
+a { /* Para los links alpicar lo siguiente*/
+    color:rgb(66, 64, 64);   /* Cambiar el color */
+} 
+
+
+/* aqui empieza el css del catalogo*/
+
+.fondo_contenedor_nave{ /* fondo de la naves*/
+	background-image: url(../imagenes/espacio.jpg);
+	padding-bottom: 150px;
+	background-size: 50%;
+	padding-top: 140px;
+}
+.contenedor_nave{ /* estilo de lo que envuelve la nave*/
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.carta_nave{
+width: 350px;
+margin-left: auto;
+margin-right: auto;
+transition: 0.6s;
+background-color:rgb(117, 224, 117, 0.7);
+box-shadow: 2px 2px 2px rgba(15, 184, 51, 0.794);
+text-align: center;
+}
+.carta_nave:hover{
+height: auto;
+box-shadow: 5px 5px 10px rgba(15, 184, 51, 0.794);
+}
+.carta_nave .nave{
+padding: 25px;
+height: auto;
+width: 100%;
+}
+.carta_nave .nave img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.carta_nave .top-textnave{
+padding: 5px;
+
+}
+.carta_nave .top-textnave .name_nave{
+font-size: 25px;
+font-weight: 600;
+color: black;
+}
+.carta_nave .top-textnave p{
+font-size: 20px;
+font-weight: 600;
+color: black;
+line-height: 20px;
+}
+.carta_nave .producto{
+padding: 0 20px 10px 20px;
+margin-top: 20px;
+opacity: 0;
+visibility: hidden;
+transition: 0.1s;
+}
+.carta_nave:hover .producto{
+opacity: 1;
+visibility: visible;
+}
+.carta_nave .producto .descriptionnave{
+text-align: justify;
+font-weight: 500;
+}
+.lista_desordenada_nave{
+	text-align: left;
+	padding-left: 70px;
+}
+.lista_ordenada_nave{
+	padding-left: 30px;
+}
+
+
+footer { /* Para el pie de página aplicar lo siguiente*/
+	position: absolute;
+	width: 100%;
+	background-color: black;
+	border:  rgb(117, 224, 117) 1px solid;
+}
+.main-content{
+	display: flex;
+}
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box h2{
+	font-size: 1.125rem;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.box .content{
+	margin: 20px 0 0 0;
+	position: relative;
+}
+.box .content:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 2px;
+	width: 100%;
+	background: rgb(117, 224, 117);
+}
+.box .content:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	background: rgb(117, 224, 117);
+	top: -10px;
+}
+.left .content p{
+	text-align: justify;
+	color: white;
+}
+.left .content .social{
+	margin: 20px 0 0 0;
+}
+.left .content .social a{
+	padding: 0 2px;
+}
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 12px;
+	transition: 0.3s;
+	color: black;
+}
+.left .content .social a span:hover{
+	background: rgb(117, 224, 117);
+}
+.center .content .fas{
+	font-size: 1.4375rem;
+	background: white;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.center .content .fas:hover{
+	background: rgb(117, 224, 117);
+}
+.center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	padding-left: 10px;
+	color: white;
+}
+.center .content .phone{
+	margin: 15px 0;
+}
+.right form .text{
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	color: white;
+}
+.right form .msg{
+	margin-top: 10px;
+}
+.right form input, .right form textarea{
+	width: 100%;
+	font-size: 1.0625rem;
+	background: white;
+	padding-left: 10px;
+	border: 1px solid black;
+}
+.right form input:focus,
+.right form textarea:focus{
+	outline-color: rgb(117, 224, 117);
+}
+.right form input{
+	height: 35px;
+}
+.right form .btn{
+	margin-top: 10px;
+}
+.right form .btn button{
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: white;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+}
+.right form .btn button:hover{
+	background:rgb(117, 224, 117);
+}
+.bottom center{
+	padding: 5px;
+	font-size: 0.9375rem;
+	background: black;
+}
+.bottom center span{
+	color: white;
+}
+.bottom center a{
+	color: rgb(117, 224, 117);
+	text-decoration: none;
+}
+.bottom center a:hover{
+	text-decoration: underline;
+}
+.centraralfinal{ /* centrar el texto alfinal de la pagina*/
+	text-align: center;
+	padding-bottom: 10px;
+}
+.credit{  /* estilo del texto alfinal de la pagina*/
+	text-align: center;
+	color: rgb(117, 224, 117);
+}
