@@ -1,6 +1,6 @@
 from crawler import crawler
 import urllib.request
-# page = "http://127.0.0.1:5500/Front-End/html/Inicio.html"
+# page = "file:///C:/proyecto_transversal/Front-End/html/Inicio.html"
 
 
 def get_html_products(page):
