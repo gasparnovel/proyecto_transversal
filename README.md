@@ -1,6 +1,6 @@
 # GO-GO UFO
 
-![Logo GO-GO UFO](./Front-End/imagenes/Logo.png)
+![Logo GO-GO UFO](./Front-End/imagenes/Logo.PNG)
 
 ### Definición general proyecto
 
