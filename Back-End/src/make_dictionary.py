@@ -27,10 +27,12 @@ def make_dictionary(page):
                 else:
                     values.append(word)
             diccionario = dict(zip(keys, values))
+            assert type(diccionario) is dict
             todos_productos.append(diccionario)
         else:
             return lista
     assert len(todos_productos) == len(lista)
+    assert type(todos_productos) is list
     return todos_productos
 
 
