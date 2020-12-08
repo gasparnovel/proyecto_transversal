@@ -1,10 +1,11 @@
 import urllib.request
-from get_products import get_all_products
+from .get_products import get_all_products
 productos_sin_hmtl = []
 
 
 def remove_space(lista):
     # Por cada item de la lista, lo limpia de marcas que puedan dar fallos
+    assert type(lista) is list
     lista_limpia = []
     for item in lista:
         item = item.replace('\r', '')
