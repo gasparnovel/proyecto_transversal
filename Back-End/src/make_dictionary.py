@@ -4,11 +4,11 @@ from remove_html import productos_sin_hmtl
 
 def make_dictionary(lista):
     assert type(lista) is list
-    separador = ':'
-    keys = []
-    values = []
     todos_productos = []
     for item in lista:
+        separador = ':'
+        keys = []
+        values = []
         if item == separador:
             return []
         if item.count(separador) == 1 and item[-1] == separador:
@@ -36,3 +36,4 @@ if __name__ == "__main__":
     assert make_dictionary(['h:']) == ['h']
     assert make_dictionary(['h: q']) == [{'h': 'q'}]
     assert make_dictionary(['h: q m: u']) == [{'h': 'q', 'm': 'u'}]
+    assert make_dictionary(['h: q', 'm: u']) == [{'h': 'q'}, {'m': 'u'}]
