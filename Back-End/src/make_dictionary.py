@@ -31,10 +31,6 @@ def make_dictionary(page):
     return todos_productos
 
 
-# print(make_dictionary(
-    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
-
-
 if __name__ == "__main__":
     assert make_dictionary([':']) == []
     assert make_dictionary(['h']) == ['h']

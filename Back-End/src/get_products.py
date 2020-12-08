@@ -1,8 +1,7 @@
 from crawler import crawler
 import urllib.request
-# from segunda_prueba import list_links
 lista_productos = []
-# page = "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Nuestros_Ufos.html"
+# page = "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"
 
 
 def get_html_products(page):
@@ -43,8 +42,3 @@ def get_next_product(page):
     end_quote = page.find('</div>', start_tag + 1)
     producto = page[start_tag + 1: end_quote]
     return producto, end_quote
-
-
-# print(get_all_products(
-    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
-# print(total)

@@ -38,11 +38,3 @@ def remove_html(page):
         productos_sin_hmtl.append(out)
     assert len(productos_sin_hmtl) == 13
     return productos_sin_hmtl
-
-
-# print(remove_html(lista_productos))
-# print(remove_space(lista_productos))
-# print(productos_sin_hmtl)
-# print(len(productos_sin_hmtl))
-# print(remove_html(
-    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
