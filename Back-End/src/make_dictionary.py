@@ -1,8 +1,9 @@
 import urllib
-from remove_html import productos_sin_hmtl
+from remove_html import remove_html
 
 
-def make_dictionary(lista):
+def make_dictionary(page):
+    lista = remove_html(page)
     assert type(lista) is list
     todos_productos = []
     for item in lista:
@@ -28,6 +29,10 @@ def make_dictionary(lista):
         else:
             return lista
     return todos_productos
+
+
+# print(make_dictionary(
+    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
 
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@ def remove_html(page):
     lista = remove_space(lista)
     tag = False
     quote = False
-    # productos_sin_hmtl = []
+    productos_sin_hmtl = []
     for item in lista:
         out = ""
         for c in item:
@@ -44,5 +44,5 @@ def remove_html(page):
 # print(remove_space(lista_productos))
 # print(productos_sin_hmtl)
 # print(len(productos_sin_hmtl))
-print(remove_html(
-    "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
+# print(remove_html(
+    # "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
