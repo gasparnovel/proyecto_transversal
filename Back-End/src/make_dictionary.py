@@ -3,6 +3,8 @@ from remove_html import remove_html
 
 
 def make_dictionary(page):
+    # En este módulo entra el url y saca una lista de diccionarios
+    # de los productos
     lista = remove_html(page)
     assert type(lista) is list
     todos_productos = []
@@ -28,6 +30,7 @@ def make_dictionary(page):
             todos_productos.append(diccionario)
         else:
             return lista
+    assert len(todos_productos) == len(lista)
     return todos_productos
 
 

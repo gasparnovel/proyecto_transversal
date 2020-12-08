@@ -2,4 +2,7 @@ from make_dictionary import make_dictionary
 
 
 def run(page):
-    return make_dictionary(page)
+    try:
+        return make_dictionary(page)
+    except:
+        print('No es un url válido')
