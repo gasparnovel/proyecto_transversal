@@ -43,3 +43,7 @@ def remove_html(page):
         productos_sin_hmtl.append(out)
     assert len(productos_sin_hmtl) == 13
     return productos_sin_hmtl
+
+
+if __name__ == "__main__":
+    assert remove_space(['  ']) == ['']
