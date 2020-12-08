@@ -6,10 +6,16 @@
 
 Los retos principales de este proyecto consiste en crear una sitio web funcional, diseñar un programa de _Web Scrapping_ que pueda almacenar la información de los productos que se encuentren en el sitio web en una base de datos.
 
-### Requisitos del proyecto
+### Utilización
 
-Los requisitos del proyecto se encuentran divididos por módulos:
+Para usar el programa deberemos ejectuar el fichero `main.py` desde el terminal python o desde la carpeta, dandole doble click al fichero.
 
-#### Lenguaje de Marcas
+```
+C:\Proyecto_transversal\proyecto_transversal\Back-End\src> python main.py 
+```
 
-- Crear el sitio web corporativo de la organización. Inventar los productos y servicios hasta conseguir un
+### Autores y contribuciones
+
+Autores: Alejandro López y Gaspar Novel
+
+Gracias a algunos profesores del Dual por la ayudada brindada.
