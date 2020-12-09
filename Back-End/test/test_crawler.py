@@ -42,4 +42,4 @@ def test_varios_target():
 
 def test_crawler():
     assert get_all_links(
-        "file:///C:/proyecto_transversal/Front-End/html/Inicio.html") == ['Inicio.html', 'Nuestros_UFOs.html', 'Quienes_Somos.html', 'Recursos_sobre_la_COVID-19.html']
+        "file:///C:/proyecto_transversal/Front-End/html/Inicio.html") == ['Inicio.html', 'Nuestros_UFOs.html', 'Quienes_Somos.html', 'Recursos.html']

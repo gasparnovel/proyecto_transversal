@@ -1,5 +1,5 @@
 import urllib
-from remove_html import remove_html
+from .remove_html import remove_html
 
 
 def make_dictionary(page):

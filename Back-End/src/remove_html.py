@@ -1,5 +1,5 @@
 import urllib.request
-from get_products import get_all_products
+from .get_products import get_all_products
 productos_sin_hmtl = []
 
 
