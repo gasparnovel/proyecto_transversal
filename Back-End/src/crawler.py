@@ -20,11 +20,16 @@ def get_all_links(page):
     while True:
         url, endpos = get_next_target(page)
         if url:
+            # Como hay enlaces que llevan a un apartado concreto de otro
+            # html, los descartamos
             if '#' in url or url in list_links or '..' in url:
                 page = page[endpos+1:]
                 continue
             else:
+                # Añade el url a la lista con los links
                 list_links.append(url)
+                # Devuelve el HTMl a partir de end_quote, que es la posición donde
+                # acaba el HTML
                 page = page[endpos:]
         else:
             break
