@@ -1,4 +1,5 @@
 import pymongo
+from make_dictionary import make_dictionary
 
 def check_collection2():
     myclient = pymongo.MongoClient("mongodb+srv://administrador:go-go-ufo12345@cluster0.scjfs.mongodb.net/admin")

@@ -1,7 +1,6 @@
 import pymongo
 import sys
-from
-import make_dictionary
+from make_dictionary import make_dictionary
 
 
 def create_db():
