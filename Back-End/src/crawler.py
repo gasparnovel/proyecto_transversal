@@ -68,3 +68,4 @@ def crawler(page):
 
 if __name__ == "__main__":
     assert get_webpage("hola/que") == "hola/"
+    assert get_next_target('<a href>') == ('<a href', -1)
