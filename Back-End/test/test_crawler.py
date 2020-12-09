@@ -8,3 +8,7 @@ def test_basico():
 
 def test_barra():
     assert get_webpage('/') == '/'
+
+
+def test_sin_barra():
+    assert get_webpage('hola') == ''
