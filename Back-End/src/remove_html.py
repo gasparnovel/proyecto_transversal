@@ -1,26 +1,37 @@
 import urllib.request
-from get_products import get_all_products
+from .get_products import get_all_products
 productos_sin_hmtl = []
 
 
 def remove_space(lista):
+    # Por cada item de la lista, lo limpia de marcas que puedan dar fallos
+    assert type(lista) is list
     lista_limpia = []
     for item in lista:
+        # Quita todos los dobles espacio, los '\n' y '\r' que dan fallos
+        # en remove_html
         item = item.replace('\r', '')
         item = item.replace('\n', '')
         item = item.replace('  ', '')
+        # Añade cada item limpio en una nueva lista
         lista_limpia.append(item)
-    assert len(lista_limpia) == 13
+    # Comprueba que la lista antigua y la nueva tengan la misma longitud
+    assert len(lista_limpia) == len(lista)
     return lista_limpia
 
 
 def remove_html(page):
+    if type(page) is not str:
+        return []
+    # invoca esta funcion para coger los productos del hmtl
     lista = get_all_products(page)
+    # limpia el html de espacios y otras marcas que puedan provocar un error
     lista = remove_space(lista)
     tag = False
     quote = False
-    # productos_sin_hmtl = []
+    productos_sin_hmtl = []
     for item in lista:
+        # Quita las marcas HTML de cada item de la lista
         out = ""
         for c in item:
             if c == '<' and not quote:
@@ -32,17 +43,20 @@ def remove_html(page):
             elif c == quote:
                 quote = False
             elif not tag:
+                # Si el carácter no está dentro de un etiqueta, se añade a 'out'
                 out = out + c
+        # Comprueba que en 'out' no haya ninguna '<', si devuelve 'out' con
+        # alhúm '<', ha fallado el código
         assert out.find('<') == -1
-        # return out
+        # Cuando todo el item de la lista está sin etiquetas, se inserta en la lista
+        # de los productos
         productos_sin_hmtl.append(out)
-    assert len(productos_sin_hmtl) == 13
+    # Comprueba que la lista de los productos sin HTML tenga la misma longitud que que la lista que entra
+    assert len(productos_sin_hmtl) == len(lista)
     return productos_sin_hmtl
 
 
-# print(remove_html(lista_productos))
-# print(remove_space(lista_productos))
-# print(productos_sin_hmtl)
-# print(len(productos_sin_hmtl))
-print(remove_html(
-    "file:///C:/Proyecto_transversal/proyecto_transversal/Front-End/html/Inicio.html"))
+if __name__ == "__main__":
+    assert remove_space(['  ']) == ['']
+    assert remove_space(['\n']) == ['']
+    assert remove_space(['\r']) == ['']
