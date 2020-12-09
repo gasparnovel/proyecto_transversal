@@ -31,3 +31,4 @@ def test_basico_target():
 def test_next_target():
     assert get_next_target('<a href>') == ('<a href', -1)
     assert get_next_target('<a href> "hola"') == ('hola', 14)
+    assert get_next_target('<a href src= "hola">') == ('hola', 18)
