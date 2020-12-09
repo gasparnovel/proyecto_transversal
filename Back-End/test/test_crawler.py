@@ -1,8 +1,9 @@
 from src.crawler import get_webpage
+from src.crawler import get_next_target
 import pytest
 
 
-def test_basico():
+def test_basico_webpage():
     assert get_webpage([]) == ''
 
 
@@ -21,3 +22,7 @@ def test_texto():
 
 def test_varias_barras():
     assert get_webpage('hola/que/tal') == 'hola/que/'
+
+
+def test_basico_target():
+    assert get_next_target('') == (None, 0)
