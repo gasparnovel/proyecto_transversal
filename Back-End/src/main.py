@@ -1,4 +1,4 @@
-from .make_dictionary import make_dictionary
+from make_dictionary import make_dictionary
 
 
 def run(page):

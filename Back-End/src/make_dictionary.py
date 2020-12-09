@@ -1,5 +1,5 @@
 import urllib
-from .remove_html import remove_html
+from remove_html import remove_html
 
 
 def make_dictionary(page):
@@ -38,8 +38,8 @@ def make_dictionary(page):
 
 if __name__ == "__main__":
     assert make_dictionary([':']) == []
-    assert make_dictionary(['h']) == ['h']
-    assert make_dictionary(['h:']) == ['h']
+    assert make_dictionary(['h']) == []
+    assert make_dictionary(['h:']) == []
     assert make_dictionary(['h: q']) == [{'h': 'q'}]
     assert make_dictionary(['h: q m: u']) == [{'h': 'q', 'm': 'u'}]
     assert make_dictionary(['h: q', 'm: u']) == [{'h': 'q'}, {'m': 'u'}]

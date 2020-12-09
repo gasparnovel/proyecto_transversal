@@ -1,4 +1,5 @@
 from src.get_products import get_next_product
+from src.crawler import crawler
 import pytest
 
 

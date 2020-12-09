@@ -1,4 +1,4 @@
-from .crawler import crawler
+from crawler import crawler
 import urllib.request
 # page = "file:///C:/proyecto_transversal/Front-End/html/Inicio.html"
 
