@@ -17,3 +17,7 @@ def test_sin_barra():
 def test_texto():
     assert get_webpage('hola/') == 'hola/'
     assert get_webpage('hola/que') == 'hola/'
+
+
+def test_varias_barras():
+    assert get_webpage('hola/que/tal') == 'hola/que/'
