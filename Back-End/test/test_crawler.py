@@ -12,3 +12,7 @@ def test_barra():
 
 def test_sin_barra():
     assert get_webpage('hola') == ''
+
+
+def test_texto():
+    assert get_webpage('hola/') == 'hola/'
