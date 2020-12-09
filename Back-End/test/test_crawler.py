@@ -1,5 +1,6 @@
 from src.crawler import get_webpage
 from src.crawler import get_next_target
+from src.crawler import get_all_links
 import pytest
 
 
@@ -37,3 +38,8 @@ def test_next_target():
 def test_varios_target():
     assert get_next_target(
         '<a href src= "hola"> <a href src= "hola"') == ('hola', 18)
+
+
+def test_crawler():
+    assert get_all_links(
+        "file:///C:/proyecto_transversal/Front-End/html/Inicio.html") == ['Inicio.html', 'Nuestros_UFOs.html', 'Quienes_Somos.html', 'Recursos_sobre_la_COVID-19.html']

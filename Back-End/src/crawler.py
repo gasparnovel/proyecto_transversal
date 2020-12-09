@@ -20,7 +20,7 @@ def get_all_links(page):
     while True:
         url, endpos = get_next_target(page)
         if url:
-            if url == '#' or url in list_links:
+            if '#' in url or url in list_links or '..' in url:
                 page = page[endpos+1:]
                 continue
             else:
@@ -69,3 +69,5 @@ def crawler(page):
 if __name__ == "__main__":
     assert get_webpage("hola/que") == "hola/"
     assert get_next_target('<a href>') == ('<a href', -1)
+    assert get_all_links(
+        "file:///C:/proyecto_transversal/Front-End/html/Inicio.html")
