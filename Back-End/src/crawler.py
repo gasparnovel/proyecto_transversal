@@ -6,7 +6,7 @@ total = {}
 
 
 def get_html(url):  # Transforma el html en un string
-    try:
+    try:    # Intenta convertir el html en un string
         request = urllib.request.urlopen(url)
         page = request.read().decode('utf-8')
         return page
@@ -16,7 +16,7 @@ def get_html(url):  # Transforma el html en un string
 
 def get_all_links(page):
     # Crea una lista con todos los enlaces de html
-    page = get_html(page)
+    page = get_html(page)  # Llama a la funcion para transformarlo en un string
     while True:
         url, endpos = get_next_target(page)
         if url:
@@ -36,12 +36,20 @@ def get_next_target(page):
     # Dentro de la página que se le da, busca todos los
     # enlaces
     assert type(page) is str
+    # star_link define donde empieza la etiqueta HTML del enlace
     start_link = page.find("<a href")
     if start_link == -1:
+        # Si no hay ningún enlace, devuelve esto
         return None, 0
+    # start_quote marca donde empieza el enlace, en este caso dentro del HTMl sería
+    # despues de 'src='
     start_quote = page.find('"', start_link + 1)
+    # end_ quote marca donde termina el enlace
     end_quote = page.find('"', start_quote + 1)
+    # el url sería el texto que hay entre las comillas de 'src='
     url = page[start_quote + 1: end_quote]
+    # Devuelve el url para meterlo en list_links y el final del url para seguir
+    # buscando el siguiente url desde esa posición
     return url, end_quote
 
 
@@ -49,8 +57,8 @@ def get_next_target(page):
 # uno a uno)
 def get_webpage(link):
     if type(link) is str:
-        final = link.rfind("/")
-        webpage = link[0:final + 1]
+        final = link.rfind("/")  # Busca la última '/'
+        webpage = link[0:final + 1]  # Webpage es el url hasta la ultima '/'
         return webpage
     else:
         return ''
