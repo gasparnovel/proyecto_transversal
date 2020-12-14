@@ -1,4 +1,5 @@
 from .make_dictionary import make_dictionary
+# from src.main import *
 # run("file:///C:/proyecto_transversal/Front-End/html/Inicio.html")
 # page = "file:///C:/proyecto_transversal/Front-End/html/Inicio.html"
 
