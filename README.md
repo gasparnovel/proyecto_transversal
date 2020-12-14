@@ -13,6 +13,9 @@ Para usar el programa deberemos ejectuar el fichero `main.py` desde el terminal 
 ```
 C:\Proyecto_transversal\proyecto_transversal\Back-End\src> python main.py 
 ```
+~~~~
+Texto
+~~~~
 
 ### Autores y contribuciones
 
